@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
     func startRecording() {
         let recorder = RPScreenRecorder.sharedRecorder()
+        recorder.delegate = self;
         
         recorder.startRecordingWithMicrophoneEnabled(true) { (error) -> Void in
             if let error = error {
@@ -48,9 +49,29 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: RPScreenRecorderDelegate {
+    func screenRecorderDidChangeAvailability(screenRecorder: RPScreenRecorder) {
+        print("screen recorder did change availability")
+    }
+    
+    func screenRecorder(screenRecorder: RPScreenRecorder, didStopRecordingWithError error: NSError, previewViewController: RPPreviewViewController?) {
+        print("screen recorder did stop recording : \(error.localizedDescription)")
+    }
+}
+
 extension ViewController: RPPreviewViewControllerDelegate {
     func previewControllerDidFinish(previewController: RPPreviewViewController) {
+        print("preview controller did finish")
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func previewController(previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {
+        print("preview controller did finish with activity types : \(activityTypes)")
+        if activityTypes.contains("com.apple.UIKit.activity.SaveToCameraRoll") {
+            // video has saved to camera roll
+        } else {
+            // cancel
+        }
     }
 }
 
