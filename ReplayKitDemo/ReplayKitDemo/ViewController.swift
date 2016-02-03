@@ -10,10 +10,17 @@ import UIKit
 import ReplayKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var itemView: UIView!
+    
+    var animator: UIDynamicAnimator!
+    var snapBehavior: UISnapBehavior?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        animator = UIDynamicAnimator(referenceView: self.view)
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .Plain, target: self, action: "startRecording")
     }
 
@@ -22,6 +29,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tap(sender: UITapGestureRecognizer) {
+        let point = sender.locationInView(self.view)
+        if let snap = snapBehavior {
+            animator.removeBehavior(snap)
+        }
+        snapBehavior = UISnapBehavior(item: itemView, snapToPoint: point)
+        animator.addBehavior(snapBehavior!)
+    }
+    
     func startRecording() {
         let recorder = RPScreenRecorder.sharedRecorder()
         recorder.delegate = self;
@@ -29,6 +45,7 @@ class ViewController: UIViewController {
         recorder.startRecordingWithMicrophoneEnabled(true) { (error) -> Void in
             if let error = error {
                 print(error.localizedDescription)
+                self.alert(error.localizedDescription)
             } else {
                 self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .Plain, target: self, action: "stopRecording")
             }
@@ -39,13 +56,25 @@ class ViewController: UIViewController {
         let recorder = RPScreenRecorder.sharedRecorder()
         
         recorder.stopRecordingWithHandler { (previewController, error) -> Void in
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .Plain, target: self, action: "startRecording")
-            
-            if let preview = previewController {
-                preview.previewControllerDelegate = self
-                self.presentViewController(preview, animated: true, completion: nil)
+            if let error = error {
+                print(error.localizedDescription)
+                self.alert(error.localizedDescription)
+            } else {
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .Plain, target: self, action: "startRecording")
+                
+                if let preview = previewController {
+                    preview.previewControllerDelegate = self
+                    self.presentViewController(preview, animated: true, completion: nil)
+                }
             }
         }
+    }
+    
+    func alert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
 
@@ -62,7 +91,7 @@ extension ViewController: RPScreenRecorderDelegate {
 extension ViewController: RPPreviewViewControllerDelegate {
     func previewControllerDidFinish(previewController: RPPreviewViewController) {
         print("preview controller did finish")
-        dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func previewController(previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {

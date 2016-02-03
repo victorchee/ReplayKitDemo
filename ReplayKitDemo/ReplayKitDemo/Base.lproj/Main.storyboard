@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Replay-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReplayKitDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,22 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DvD-6M-uUE">
-                                <rect key="frame" x="282" y="282" width="37" height="37"/>
-                                <color key="color" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-AZ-3Cy">
+                                <rect key="frame" x="256" y="256" width="88" height="88"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="th8-rf-41g"/>
+                                    <constraint firstAttribute="height" constant="88" id="wUz-rI-lTQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="DvD-6M-uUE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkC-gW-4Uf"/>
-                            <constraint firstItem="DvD-6M-uUE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iFd-me-o0x"/>
+                            <constraint firstItem="2zd-AZ-3Cy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgD-3W-Vmb"/>
+                            <constraint firstItem="2zd-AZ-3Cy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hnS-7c-4Ox"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rt8-GB-qCT" appends="YES" id="2ZZ-mi-Ulq"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="gmN-Qv-8lJ"/>
+                    <navigationItem key="navigationItem" title="Replay" id="gmN-Qv-8lJ"/>
+                    <connections>
+                        <outlet property="itemView" destination="2zd-AZ-3Cy" id="Vr1-9C-WEb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rt8-GB-qCT">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="DSY-To-jfH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1117" y="137"/>
+            <point key="canvasLocation" x="383" y="-113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xBA-bz-bCy">
