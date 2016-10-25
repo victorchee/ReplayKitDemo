@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     func startRecording() {
         let recorder = RPScreenRecorder.shared()
         recorder.isMicrophoneEnabled = true
+        recorder.isCameraEnabled = true
         recorder.delegate = self;
         
         recorder.startRecording { error in

@@ -12,7 +12,48 @@
 		1FDC21BA1DBF560300340CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC21B81DBF560300340CC1 /* Main.storyboard */; };
 		1FDC21BC1DBF560300340CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC21BB1DBF560300340CC1 /* Assets.xcassets */; };
 		1FDC21BF1DBF560300340CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC21BD1DBF560300340CC1 /* LaunchScreen.storyboard */; };
+		1FDC220B1DBF5D3300340CC1 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDC220A1DBF5D3300340CC1 /* ReplayKit.framework */; };
+		1FDC220E1DBF5D3300340CC1 /* MovieClipHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC220D1DBF5D3300340CC1 /* MovieClipHandler.swift */; };
+		1FDC22101DBF5D3300340CC1 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC220F1DBF5D3300340CC1 /* SampleHandler.swift */; };
+		1FDC22171DBF5D3400340CC1 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDC220A1DBF5D3300340CC1 /* ReplayKit.framework */; };
+		1FDC22191DBF5D3400340CC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDC22181DBF5D3400340CC1 /* UIKit.framework */; };
+		1FDC221C1DBF5D3400340CC1 /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC221B1DBF5D3400340CC1 /* BroadcastViewController.swift */; };
+		1FDC221F1DBF5D3400340CC1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC221D1DBF5D3400340CC1 /* MainInterface.storyboard */; };
+		1FDC22231DBF5D3400340CC1 /* BroadcastUploadExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FDC22161DBF5D3300340CC1 /* BroadcastUploadExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FDC22261DBF5D3400340CC1 /* BroadcastUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FDC22081DBF5D3300340CC1 /* BroadcastUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FDC22211DBF5D3400340CC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDC21A91DBF560300340CC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FDC22151DBF5D3300340CC1;
+			remoteInfo = BroadcastUploadExtensionUI;
+		};
+		1FDC22241DBF5D3400340CC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FDC21A91DBF560300340CC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FDC22071DBF5D3300340CC1;
+			remoteInfo = BroadcastUploadExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FDC222D1DBF5D3400340CC1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1FDC22231DBF5D3400340CC1 /* BroadcastUploadExtensionUI.appex in Embed App Extensions */,
+				1FDC22261DBF5D3400340CC1 /* BroadcastUploadExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FDC21B11DBF560300340CC1 /* BroadcastHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +63,16 @@
 		1FDC21BB1DBF560300340CC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FDC21BE1DBF560300340CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDC21C01DBF560300340CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDC22081DBF5D3300340CC1 /* BroadcastUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDC220A1DBF5D3300340CC1 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		1FDC220D1DBF5D3300340CC1 /* MovieClipHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClipHandler.swift; sourceTree = "<group>"; };
+		1FDC220F1DBF5D3300340CC1 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		1FDC22111DBF5D3300340CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDC22161DBF5D3300340CC1 /* BroadcastUploadExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDC22181DBF5D3400340CC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FDC221B1DBF5D3400340CC1 /* BroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		1FDC221E1DBF5D3400340CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1FDC22201DBF5D3400340CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +83,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDC22051DBF5D3300340CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC220B1DBF5D3300340CC1 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDC22131DBF5D3300340CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC22171DBF5D3400340CC1 /* ReplayKit.framework in Frameworks */,
+				1FDC22191DBF5D3400340CC1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				1FDC21B31DBF560300340CC1 /* BroadcastHandler */,
+				1FDC220C1DBF5D3300340CC1 /* BroadcastUploadExtension */,
+				1FDC221A1DBF5D3400340CC1 /* BroadcastUploadExtensionUI */,
+				1FDC22091DBF5D3300340CC1 /* Frameworks */,
 				1FDC21B21DBF560300340CC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				1FDC21B11DBF560300340CC1 /* BroadcastHandler.app */,
+				1FDC22081DBF5D3300340CC1 /* BroadcastUploadExtension.appex */,
+				1FDC22161DBF5D3300340CC1 /* BroadcastUploadExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +137,35 @@
 			path = BroadcastHandler;
 			sourceTree = "<group>";
 		};
+		1FDC22091DBF5D3300340CC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FDC220A1DBF5D3300340CC1 /* ReplayKit.framework */,
+				1FDC22181DBF5D3400340CC1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FDC220C1DBF5D3300340CC1 /* BroadcastUploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1FDC220D1DBF5D3300340CC1 /* MovieClipHandler.swift */,
+				1FDC220F1DBF5D3300340CC1 /* SampleHandler.swift */,
+				1FDC22111DBF5D3300340CC1 /* Info.plist */,
+			);
+			path = BroadcastUploadExtension;
+			sourceTree = "<group>";
+		};
+		1FDC221A1DBF5D3400340CC1 /* BroadcastUploadExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				1FDC221B1DBF5D3400340CC1 /* BroadcastViewController.swift */,
+				1FDC221D1DBF5D3400340CC1 /* MainInterface.storyboard */,
+				1FDC22201DBF5D3400340CC1 /* Info.plist */,
+			);
+			path = BroadcastUploadExtensionUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +176,52 @@
 				1FDC21AD1DBF560300340CC1 /* Sources */,
 				1FDC21AE1DBF560300340CC1 /* Frameworks */,
 				1FDC21AF1DBF560300340CC1 /* Resources */,
+				1FDC222D1DBF5D3400340CC1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FDC22221DBF5D3400340CC1 /* PBXTargetDependency */,
+				1FDC22251DBF5D3400340CC1 /* PBXTargetDependency */,
 			);
 			name = BroadcastHandler;
 			productName = BroadcastHandler;
 			productReference = 1FDC21B11DBF560300340CC1 /* BroadcastHandler.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1FDC22071DBF5D3300340CC1 /* BroadcastUploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDC222C1DBF5D3400340CC1 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */;
+			buildPhases = (
+				1FDC22041DBF5D3300340CC1 /* Sources */,
+				1FDC22051DBF5D3300340CC1 /* Frameworks */,
+				1FDC22061DBF5D3300340CC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtension;
+			productName = BroadcastUploadExtension;
+			productReference = 1FDC22081DBF5D3300340CC1 /* BroadcastUploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1FDC22151DBF5D3300340CC1 /* BroadcastUploadExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FDC222B1DBF5D3400340CC1 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionUI" */;
+			buildPhases = (
+				1FDC22121DBF5D3300340CC1 /* Sources */,
+				1FDC22131DBF5D3300340CC1 /* Frameworks */,
+				1FDC22141DBF5D3300340CC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtensionUI;
+			productName = BroadcastUploadExtensionUI;
+			productReference = 1FDC22161DBF5D3300340CC1 /* BroadcastUploadExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +234,16 @@
 				ORGANIZATIONNAME = VictorChee;
 				TargetAttributes = {
 					1FDC21B01DBF560300340CC1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8F4GU35MC5;
+						ProvisioningStyle = Automatic;
+					};
+					1FDC22071DBF5D3300340CC1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8F4GU35MC5;
+						ProvisioningStyle = Automatic;
+					};
+					1FDC22151DBF5D3300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8F4GU35MC5;
 						ProvisioningStyle = Automatic;
@@ -115,6 +264,8 @@
 			projectRoot = "";
 			targets = (
 				1FDC21B01DBF560300340CC1 /* BroadcastHandler */,
+				1FDC22071DBF5D3300340CC1 /* BroadcastUploadExtension */,
+				1FDC22151DBF5D3300340CC1 /* BroadcastUploadExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +281,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDC22061DBF5D3300340CC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDC22141DBF5D3300340CC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC221F1DBF5D3400340CC1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +308,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FDC22041DBF5D3300340CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC22101DBF5D3300340CC1 /* SampleHandler.swift in Sources */,
+				1FDC220E1DBF5D3300340CC1 /* MovieClipHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDC22121DBF5D3300340CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC221C1DBF5D3400340CC1 /* BroadcastViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FDC22221DBF5D3400340CC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FDC22151DBF5D3300340CC1 /* BroadcastUploadExtensionUI */;
+			targetProxy = 1FDC22211DBF5D3400340CC1 /* PBXContainerItemProxy */;
+		};
+		1FDC22251DBF5D3400340CC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FDC22071DBF5D3300340CC1 /* BroadcastUploadExtension */;
+			targetProxy = 1FDC22241DBF5D3400340CC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1FDC21B81DBF560300340CC1 /* Main.storyboard */ = {
@@ -159,6 +355,14 @@
 				1FDC21BE1DBF560300340CC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1FDC221D1DBF5D3400340CC1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FDC221E1DBF5D3400340CC1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,6 +464,7 @@
 		1FDC21C41DBF560300340CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
@@ -273,12 +478,65 @@
 		1FDC21C51DBF560300340CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcastHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1FDC22271DBF5D3400340CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcastHandler.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1FDC22281DBF5D3400340CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcastHandler.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1FDC22291DBF5D3400340CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				INFOPLIST_FILE = BroadcastUploadExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcastHandler.BroadcastUploadExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1FDC222A1DBF5D3400340CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				INFOPLIST_FILE = BroadcastUploadExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcastHandler.BroadcastUploadExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +558,23 @@
 			buildConfigurations = (
 				1FDC21C41DBF560300340CC1 /* Debug */,
 				1FDC21C51DBF560300340CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FDC222B1DBF5D3400340CC1 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDC22291DBF5D3400340CC1 /* Debug */,
+				1FDC222A1DBF5D3400340CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FDC222C1DBF5D3400340CC1 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FDC22271DBF5D3400340CC1 /* Debug */,
+				1FDC22281DBF5D3400340CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
