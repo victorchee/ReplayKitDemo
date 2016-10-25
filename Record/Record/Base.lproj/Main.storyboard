@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3SR-fd-lUf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Replay-->
+        <scene sceneID="aTZ-7h-ghR">
+            <objects>
+                <viewController id="Kg8-3u-B1i" customClass="ViewController" customModule="ReplayKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hY6-Ik-w6M"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvD-Xr-2Ut"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SFA-bs-CTq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuD-jE-75b">
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Cm5-Wh-XIl"/>
+                                    <constraint firstAttribute="width" constant="88" id="ehM-IG-05x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="VuD-jE-75b" firstAttribute="centerY" secondItem="SFA-bs-CTq" secondAttribute="centerY" id="7CF-8e-QBo"/>
+                            <constraint firstItem="VuD-jE-75b" firstAttribute="centerX" secondItem="SFA-bs-CTq" secondAttribute="centerX" id="xPq-2H-EeD"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gPH-Gb-cBd" appends="YES" id="jK8-kP-15G"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Replay" id="15Y-Y1-kXe"/>
+                    <connections>
+                        <outlet property="itemView" destination="VuD-jE-75b" id="Gvx-WQ-NPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGN-up-Ieg" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gPH-Gb-cBd">
+                    <connections>
+                        <action selector="tap:" destination="Kg8-3u-B1i" id="O7C-dC-gH6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2687.1999999999998" y="-499.70014992503752"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SF4-1i-CC9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3SR-fd-lUf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yep-Jr-lgK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kg8-3u-B1i" kind="relationship" relationship="rootViewController" id="JgO-Zb-FPw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ea-fh-ULH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-499.70014992503752"/>
+        </scene>
+    </scenes>
+</document>
