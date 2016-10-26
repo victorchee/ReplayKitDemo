@@ -302,6 +302,7 @@
 				1FDC21A71DBF55E100340CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

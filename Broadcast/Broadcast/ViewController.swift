@@ -9,8 +9,14 @@
 import UIKit
 import ReplayKit
 
-class ViewController: UIViewController, RPBroadcastActivityViewControllerDelegate, RPBroadcastControllerDelegate {
+class ViewController: UIViewController {
+    
+    var broadcastController: RPBroadcastController?
 
+    @IBOutlet weak var pauseBarButton: UIBarButtonItem!
+    @IBOutlet weak var resumeBarButton: UIBarButtonItem!
+    @IBOutlet weak var finishBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,8 +27,7 @@ class ViewController: UIViewController, RPBroadcastActivityViewControllerDelegat
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func didPressBroadcastButton(_ sender: UIBarButtonItem) {
-        RPScreenRecorder.shared().isMicrophoneEnabled = true
+    @IBAction func broadcast(_ sender: UIBarButtonItem) {
         RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
             if let broadcastActivityViewController = broadcastActivityViewController {
                 broadcastActivityViewController.delegate = self
@@ -31,18 +36,52 @@ class ViewController: UIViewController, RPBroadcastActivityViewControllerDelegat
         }
     }
     
-    // MARK: RPBroadcastActivityViewControllerDelegate
-    func broadcastActivityViewController(_ broadcastActivityViewController: RPBroadcastActivityViewController, didFinishWith broadcastController: RPBroadcastController?, error: Error?) {
-        broadcastController?.delegate = self
-        broadcastActivityViewController.dismiss(animated: true) {
-            broadcastController?.startBroadcast { error in
-                // broadcast started
-                print("broadcast started")
-            }
+    @IBAction func pauseBroadcast(_ sender: UIBarButtonItem) {
+        broadcastController?.pauseBroadcast()
+        
+        sender.isEnabled = false
+        self.resumeBarButton.isEnabled = true
+        self.finishBarButton.isEnabled = true
+    }
+    
+    @IBAction func resumeBroadcast(_ sender: UIBarButtonItem) {
+        if let broadcast = broadcastController , broadcast.isPaused {
+            broadcast.resumeBroadcast()
+            
+            self.pauseBarButton.isEnabled = true
+            sender.isEnabled = false
+            self.finishBarButton.isEnabled = true
         }
     }
     
-    // MARK: - RPBroadcastControllerDelegate
+    @IBAction func finishBroadcast(_ sender: UIBarButtonItem) {
+        broadcastController?.finishBroadcast { [unowned self] error in
+            print("finish broadcast with error: \(error)")
+            
+            self.pauseBarButton.isEnabled = false
+            self.resumeBarButton.isEnabled = false
+            sender.isEnabled = false
+        }
+    }
+}
+
+extension ViewController: RPBroadcastActivityViewControllerDelegate {
+    func broadcastActivityViewController(_ broadcastActivityViewController: RPBroadcastActivityViewController, didFinishWith broadcastController: RPBroadcastController?, error: Error?) {
+        self.broadcastController = broadcastController
+        self.broadcastController?.delegate = self
+        broadcastActivityViewController.dismiss(animated: true) {
+            self.broadcastController?.startBroadcast { [unowned self] error in
+                // broadcast started
+                print("broadcast started with error: \(error)")
+                self.pauseBarButton.isEnabled = true
+                self.resumeBarButton.isEnabled = false
+                self.finishBarButton.isEnabled = true
+            }
+        }
+    }
+}
+
+extension ViewController: RPBroadcastControllerDelegate {
     func broadcastController(_ broadcastController: RPBroadcastController, didFinishWithError error: Error?) {
         print("broadcast did finish with error: \(error)")
     }
@@ -51,4 +90,3 @@ class ViewController: UIViewController, RPBroadcastActivityViewControllerDelegat
         print("broadcast did update service info: \(serviceInfo)")
     }
 }
-

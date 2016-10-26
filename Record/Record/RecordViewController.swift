@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordViewController.swift
 //  Record
 //
 //  Created by Migu on 2016/10/25.
@@ -9,19 +9,25 @@
 import UIKit
 import ReplayKit
 
-class ViewController: UIViewController {
+class RecordViewController: UIViewController {
     
     @IBOutlet weak var itemView: UIView!
     
     var animator: UIDynamicAnimator!
     var snapBehavior: UISnapBehavior?
     
+    @IBOutlet weak var recordBarButton: UIBarButtonItem!
+    @IBOutlet weak var stopBarButton: UIBarButtonItem!
+    @IBOutlet weak var cancelBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         animator = UIDynamicAnimator(referenceView: self.view)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain, target: self, action: #selector(ViewController.startRecording))
+        if RPScreenRecorder.shared().isAvailable {
+            recordBarButton.isEnabled = true
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,49 +44,59 @@ class ViewController: UIViewController {
         animator.addBehavior(snapBehavior!)
     }
     
-    func startRecording() {
+    @IBAction func startRecording(_ sender: UIBarButtonItem) {
         let recorder = RPScreenRecorder.shared()
         recorder.isMicrophoneEnabled = true
         recorder.isCameraEnabled = true
         recorder.delegate = self;
         
-        recorder.startRecording { error in
+        recorder.startRecording { [unowned self] error in
             if let error = error {
                 print(error.localizedDescription)
-                self.alert(error.localizedDescription)
             } else {
-                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(ViewController.stopRecording))
-            }
-        }
-    }
-    
-    func stopRecording() {
-        let recorder = RPScreenRecorder.shared()
-        
-        recorder.stopRecording { previewController, error in
-            if let error = error {
-                print(error.localizedDescription)
-                self.alert(error.localizedDescription)
-            } else {
-                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain, target: self, action: #selector(ViewController.startRecording))
+                sender.isEnabled = false
+                self.stopBarButton.isEnabled = true
+                self.cancelBarButton.isEnabled = true
                 
-                if let preview = previewController {
-                    preview.previewControllerDelegate = self
-                    self.present(preview, animated: true, completion: nil)
+                if let cameraPreviewView = recorder.cameraPreviewView {
+                    cameraPreviewView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+                    self.view.addSubview(cameraPreviewView)
                 }
             }
         }
     }
     
-    func alert(_ message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
+    @IBAction func stopRecording(_ sender: UIBarButtonItem) {
+        let recorder = RPScreenRecorder.shared()
+        
+        recorder.stopRecording { [unowned self] previewController, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                sender.isEnabled = false
+                self.recordBarButton.isEnabled = true
+                self.cancelBarButton.isEnabled = false
+                
+                if let preview = previewController {
+                    preview.previewControllerDelegate = self
+                    self.present(preview, animated: true)
+                }
+            }
+        }
+    }
+    
+    @IBAction func cancelRecording(_ sender: UIBarButtonItem) {
+        let recorder = RPScreenRecorder.shared()
+        
+        recorder.discardRecording { [unowned self] in
+            sender.isEnabled = false
+            self.recordBarButton.isEnabled = true
+            self.stopBarButton.isEnabled = false
+        }
     }
 }
 
-extension ViewController: RPScreenRecorderDelegate {
+extension RecordViewController: RPScreenRecorderDelegate {
     func screenRecorderDidChangeAvailability(_ screenRecorder: RPScreenRecorder) {
         print("screen recorder did change availability")
     }
@@ -90,7 +106,7 @@ extension ViewController: RPScreenRecorderDelegate {
     }
 }
 
-extension ViewController: RPPreviewViewControllerDelegate {
+extension RecordViewController: RPPreviewViewControllerDelegate {
     func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
         print("preview controller did finish")
         self.dismiss(animated: true, completion: nil)

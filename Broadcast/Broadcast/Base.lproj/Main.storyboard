@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MCH-4j-2kl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MCH-4j-2kl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Broadcast-->
         <scene sceneID="Umt-vu-PAq">
             <objects>
                 <viewController id="NMN-dg-YZH" customClass="ViewController" customModule="Broadcast" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,13 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AQb-be-VeM">
-                        <barButtonItem key="rightBarButtonItem" title="Broadcast" id="ec2-zH-mpN">
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" systemItem="pause" id="Jc0-Ac-3xO">
                             <connections>
-                                <action selector="didPressBroadcastButton:" destination="NMN-dg-YZH" id="Nlo-js-I44"/>
+                                <action selector="pauseBroadcast:" destination="NMN-dg-YZH" id="kvt-Qu-aOs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5Yf-bU-ct9"/>
+                        <barButtonItem enabled="NO" systemItem="play" id="6n4-SB-cfM">
+                            <connections>
+                                <action selector="resumeBroadcast:" destination="NMN-dg-YZH" id="07N-gr-EuA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Rwb-C8-6gd"/>
+                        <barButtonItem enabled="NO" systemItem="done" id="CS4-Ec-LPv">
+                            <connections>
+                                <action selector="finishBroadcast:" destination="NMN-dg-YZH" id="xoG-q0-U4h"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Broadcast" id="AQb-be-VeM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="six-G8-qXB">
+                            <connections>
+                                <action selector="broadcast:" destination="NMN-dg-YZH" id="3VK-o9-wOO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="finishBarButton" destination="CS4-Ec-LPv" id="61x-pY-OTt"/>
+                        <outlet property="pauseBarButton" destination="Jc0-Ac-3xO" id="IUU-iz-pOW"/>
+                        <outlet property="resumeBarButton" destination="6n4-SB-cfM" id="L5H-3i-kKd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYB-xS-MxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,13 +58,17 @@
         <!--Navigation Controller-->
         <scene sceneID="I21-5d-fI9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MCH-4j-2kl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="MCH-4j-2kl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QvN-ly-1qz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dz8-gK-iyr">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="NMN-dg-YZH" kind="relationship" relationship="rootViewController" id="POu-Dk-9PV"/>
                     </connections>

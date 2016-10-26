@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BroadcastHandlerViewController.swift
 //  BroadcastHandler
 //
 //  Created by Migu on 2016/10/25.
@@ -10,7 +10,7 @@
 import UIKit
 import ReplayKit
 
-class ViewController: UIViewController {
+class BroadcastHandlerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

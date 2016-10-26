@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3SR-fd-lUf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3SR-fd-lUf">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Replay-->
+        <!--Record-->
         <scene sceneID="aTZ-7h-ghR">
             <objects>
-                <viewController id="Kg8-3u-B1i" customClass="ViewController" customModule="ReplayKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kg8-3u-B1i" customClass="RecordViewController" customModule="Record" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hY6-Ik-w6M"/>
                         <viewControllerLayoutGuide type="bottom" id="NvD-Xr-2Ut"/>
@@ -41,9 +41,31 @@
                             <outletCollection property="gestureRecognizers" destination="gPH-Gb-cBd" appends="YES" id="jK8-kP-15G"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Replay" id="15Y-Y1-kXe"/>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" systemItem="play" id="dUI-pp-Ng5">
+                            <connections>
+                                <action selector="startRecording:" destination="Kg8-3u-B1i" id="bZ0-6l-SMM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9b8-hj-EHZ"/>
+                        <barButtonItem enabled="NO" systemItem="stop" id="dXk-kM-1bA">
+                            <connections>
+                                <action selector="stopRecording:" destination="Kg8-3u-B1i" id="G2I-ie-67d"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vK2-kr-rqD"/>
+                        <barButtonItem enabled="NO" systemItem="cancel" id="p8B-Ea-UjA">
+                            <connections>
+                                <action selector="cancelRecording:" destination="Kg8-3u-B1i" id="I5l-9H-kDL"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Record" id="15Y-Y1-kXe"/>
                     <connections>
+                        <outlet property="cancelBarButton" destination="p8B-Ea-UjA" id="bHV-Wa-qf3"/>
                         <outlet property="itemView" destination="VuD-jE-75b" id="Gvx-WQ-NPV"/>
+                        <outlet property="recordBarButton" destination="dUI-pp-Ng5" id="7IN-sw-qEm"/>
+                        <outlet property="stopBarButton" destination="dXk-kM-1bA" id="GPB-6h-8wq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGN-up-Ieg" sceneMemberID="firstResponder"/>
@@ -58,13 +80,17 @@
         <!--Navigation Controller-->
         <scene sceneID="SF4-1i-CC9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3SR-fd-lUf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="3SR-fd-lUf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yep-Jr-lgK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ku1-75-9gQ">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Kg8-3u-B1i" kind="relationship" relationship="rootViewController" id="JgO-Zb-FPw"/>
                     </connections>
