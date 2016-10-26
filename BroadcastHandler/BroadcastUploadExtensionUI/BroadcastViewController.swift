@@ -10,6 +10,25 @@ import ReplayKit
 
 class BroadcastViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBAction func broadcast(_ sender: UIButton) {
+        guard let username = usernameTextField.text else {
+            let alert = UIAlertController(title: "Alert", message: "cancel broadcast?", preferredStyle: .alert)
+            let confirmAction = UIAlertAction(title: "Confirm", style: .destructive, handler: { [unowned self] (action) in
+                self.userDidCancelSetup()
+            })
+            let cancelAction = UIAlertAction(title: "NO", style: .cancel, handler: { (action) in
+            })
+            alert.addAction(confirmAction)
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true)
+            return
+        }
+        
+        userDidFinishSetup()
+    }
+
     // Called when the user has finished interacting with the view controller and a broadcast stream can start
     func userDidFinishSetup() {
         // Broadcast url that will be returned to the application
@@ -29,7 +48,7 @@ class BroadcastViewController: UIViewController {
     }
     
     func userDidCancelSetup() {
-        let error = NSError(domain: "YouAppDomain", code: -1, userInfo: nil)
+        let error = NSError(domain: "com.victorchee.broadcast", code: -1, userInfo: nil)
         // Tell ReplayKit that the extension was cancelled by the user
         self.extensionContext?.cancelRequest(withError: error)
     }
