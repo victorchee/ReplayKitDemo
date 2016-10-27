@@ -81,6 +81,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func finishBroadcast(_ sender: UIBarButtonItem) {
+        RPScreenRecorder.shared().stopRecording { (previewViewController, error) in
+            
+        }
         broadcastController?.finishBroadcast { [unowned self] error in
             print("finish broadcast with error: \(error)")
             
@@ -96,6 +99,16 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
         self.broadcastController = broadcastController
         self.broadcastController?.delegate = self
         broadcastActivityViewController.dismiss(animated: true) {
+            let recorder = RPScreenRecorder.shared()
+            recorder.isMicrophoneEnabled = true
+            recorder.isCameraEnabled = true
+            recorder.startRecording { [unowned self] error in
+                if let cameraPreviewView = recorder.cameraPreviewView {
+                    cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 200, height: 200)
+                    self.view.addSubview(cameraPreviewView)
+                }
+            }
+            
             self.broadcastController?.startBroadcast { [unowned self] error in
                 // broadcast started
                 print("broadcast started with error: \(error)")
