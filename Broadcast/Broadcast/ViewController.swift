@@ -20,17 +20,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let emitterLayer = CAEmitterLayer()
+        emitterLayer.frame = view.bounds
+        emitterLayer.renderMode = kCAEmitterLayerAdditive
+        emitterLayer.emitterPosition = view.center
+        emitterLayer.emitterCells = [emitterCell(color: UIColor.orange)]
+        view.layer.addSublayer(emitterLayer)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func emitterCell(color: UIColor) -> CAEmitterCell {
+        let emitterCell = CAEmitterCell()
+        emitterCell.contents = UIImage(named: "image")?.cgImage
+        emitterCell.birthRate = 150
+        emitterCell.lifetime = 5
+        emitterCell.color = color.cgColor
+        emitterCell.velocity = 50
+        emitterCell.velocityRange = 50
+        emitterCell.emissionRange = CGFloat(M_PI * 2.0)
+        return emitterCell
+    }
 
     @IBAction func broadcast(_ sender: UIBarButtonItem) {
         RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
             if let broadcastActivityViewController = broadcastActivityViewController {
                 broadcastActivityViewController.delegate = self
+                
+                broadcastActivityViewController.modalPresentationStyle = .formSheet
+                
+                if let popover = broadcastActivityViewController.popoverPresentationController {
+                    popover.barButtonItem = sender
+                    popover.permittedArrowDirections = .any
+                }
+                
                 self.present(broadcastActivityViewController, animated: true)
             }
         }
@@ -73,6 +99,7 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
             self.broadcastController?.startBroadcast { [unowned self] error in
                 // broadcast started
                 print("broadcast started with error: \(error)")
+                
                 self.pauseBarButton.isEnabled = true
                 self.resumeBarButton.isEnabled = false
                 self.finishBarButton.isEnabled = true

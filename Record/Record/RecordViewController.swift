@@ -80,7 +80,7 @@ class RecordViewController: UIViewController {
                 if let preview = previewController {
                     preview.previewControllerDelegate = self
                     
-                    preview.modalPresentationStyle = .popover
+                    preview.modalPresentationStyle = .fullScreen
                     
                     if let popover = preview.popoverPresentationController {
                         popover.barButtonItem = sender

@@ -25,7 +25,6 @@ class BroadcastViewController: UIViewController {
             self.present(alert, animated: true)
             return
         }
-        
         userDidFinishSetup()
     }
 
