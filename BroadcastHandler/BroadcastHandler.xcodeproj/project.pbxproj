@@ -56,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FD9275D1DC1A22D0006C9B1 /* BroadcastHandler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadcastHandler.entitlements; sourceTree = "<group>"; };
+		1FD9275E1DC1A2460006C9B1 /* BroadcastUploadExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadcastUploadExtension.entitlements; sourceTree = "<group>"; };
 		1FDC21B11DBF560300340CC1 /* BroadcastHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDC21B41DBF560300340CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FDC21B61DBF560300340CC1 /* BroadcastHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastHandlerViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		1FDC21B31DBF560300340CC1 /* BroadcastHandler */ = {
 			isa = PBXGroup;
 			children = (
+				1FD9275D1DC1A22D0006C9B1 /* BroadcastHandler.entitlements */,
 				1FDC21B41DBF560300340CC1 /* AppDelegate.swift */,
 				1FDC21B61DBF560300340CC1 /* BroadcastHandlerViewController.swift */,
 				1FDC21B81DBF560300340CC1 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 		1FDC220C1DBF5D3300340CC1 /* BroadcastUploadExtension */ = {
 			isa = PBXGroup;
 			children = (
+				1FD9275E1DC1A2460006C9B1 /* BroadcastUploadExtension.entitlements */,
 				1FDC220D1DBF5D3300340CC1 /* MovieClipHandler.swift */,
 				1FDC220F1DBF5D3300340CC1 /* SampleHandler.swift */,
 				1FDC22111DBF5D3300340CC1 /* Info.plist */,
@@ -237,11 +241,21 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8F4GU35MC5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1FDC22071DBF5D3300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8F4GU35MC5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1FDC22151DBF5D3300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
@@ -466,6 +480,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BroadcastHandler/BroadcastHandler.entitlements;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -480,6 +495,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BroadcastHandler/BroadcastHandler.entitlements;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,6 +508,7 @@
 		1FDC22271DBF5D3400340CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -505,6 +522,7 @@
 		1FDC22281DBF5D3400340CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
 				DEVELOPMENT_TEAM = 8F4GU35MC5;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

@@ -31,11 +31,11 @@ class BroadcastViewController: UIViewController {
     // Called when the user has finished interacting with the view controller and a broadcast stream can start
     func userDidFinishSetup() {
         // Broadcast url that will be returned to the application
-        let broadcastURL = URL(string:"http://broadcastURL_example/stream1")
+        let broadcastURL = URL(string:"https://broadcastURL_example/stream1")
         
         // Service specific broadcast data example which will be supplied to the process extension during broadcast
         let userID = "user1"
-        let endpointURL = "http://broadcastURL_example/stream1/upload"
+        let endpointURL = "https://broadcastURL_example/stream1/upload"
         let setupInfo: [String: NSCoding & NSObjectProtocol] =  [ "userID" : userID as NSString, "endpointURL" : endpointURL as NSString ]
         
         // Set broadcast settings
