@@ -9,7 +9,8 @@
 // https://www.qcloud.com/doc/api/258/6460
 
 import UIKit
-import ReplayKit
+import AVKit
+import AVFoundation
 
 class BroadcastHandlerViewController: UITableViewController {
     
@@ -21,6 +22,12 @@ class BroadcastHandlerViewController: UITableViewController {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: UIControlEvents.valueChanged)
         tableView.refreshControl = refreshControl
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.refreshControl?.sendActions(for: .valueChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,13 +49,17 @@ class BroadcastHandlerViewController: UITableViewController {
                 mp4Clips.append(fileURL as URL)
             }
         }
+        
         tableView.reloadData()
+        
         sender.endRefreshing()
     }
     
     @IBAction func deleteAllItems(_ sender: UIBarButtonItem) {
-        for fileURL in mp4Clips {
-            try? FileManager.default.removeItem(at: fileURL)
+        if !mp4Clips.isEmpty {
+            for fileURL in mp4Clips {
+                try? FileManager.default.removeItem(at: fileURL)
+            }
             tableView.refreshControl?.sendActions(for: .valueChanged)
         }
     }
@@ -63,6 +74,20 @@ class BroadcastHandlerViewController: UITableViewController {
         let fileURL = mp4Clips[indexPath.row]
         cell.textLabel?.text = "\(fileURL.lastPathComponent)"
         return cell
+    }
+    
+    // MARK: UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let fileURL = mp4Clips[indexPath.row]
+        
+        let player = AVPlayer(url: fileURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        present(playerViewController, animated: true) { 
+            player.play()
+        }
     }
 }
 

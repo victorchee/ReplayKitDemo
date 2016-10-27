@@ -13,7 +13,7 @@ class BroadcastViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBAction func broadcast(_ sender: UIButton) {
-        guard let username = usernameTextField.text else {
+        guard let _ = usernameTextField.text else {
             let alert = UIAlertController(title: "Alert", message: "cancel broadcast?", preferredStyle: .alert)
             let confirmAction = UIAlertAction(title: "Confirm", style: .destructive, handler: { [unowned self] (action) in
                 self.userDidCancelSetup()
