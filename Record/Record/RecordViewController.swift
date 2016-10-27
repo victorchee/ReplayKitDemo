@@ -59,7 +59,7 @@ class RecordViewController: UIViewController {
                 self.cancelBarButton.isEnabled = true
                 
                 if let cameraPreviewView = recorder.cameraPreviewView {
-                    cameraPreviewView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+                    cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 100, height: 100)
                     self.view.addSubview(cameraPreviewView)
                 }
             }
@@ -79,6 +79,14 @@ class RecordViewController: UIViewController {
                 
                 if let preview = previewController {
                     preview.previewControllerDelegate = self
+                    
+                    preview.modalPresentationStyle = .popover
+                    
+                    if let popover = preview.popoverPresentationController {
+                        popover.barButtonItem = sender
+                        popover.permittedArrowDirections = .any
+                    }
+                    
                     self.present(preview, animated: true)
                 }
             }
