@@ -29,5 +29,10 @@
 		<key>RPBroadcastProcessMode</key>
 		<string>RPBroadcastProcessModeMP4Clip</string>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

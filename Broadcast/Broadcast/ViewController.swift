@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         emitterLayer.renderMode = kCAEmitterLayerAdditive
         emitterLayer.emitterPosition = view.center
         emitterLayer.emitterCells = [emitterCell(color: UIColor.orange)]
-        view.layer.addSublayer(emitterLayer)
+//        view.layer.addSublayer(emitterLayer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,7 +99,7 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
         self.broadcastController = broadcastController
         self.broadcastController?.delegate = self
         broadcastActivityViewController.dismiss(animated: true) {
-            let recorder = RPScreenRecorder.shared()
+            /*let recorder = RPScreenRecorder.shared()
             recorder.isMicrophoneEnabled = true
             recorder.isCameraEnabled = true
             recorder.startRecording { [unowned self] error in
@@ -107,7 +107,7 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
                     cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 200, height: 200)
                     self.view.addSubview(cameraPreviewView)
                 }
-            }
+            }*/
             
             self.broadcastController?.startBroadcast { [unowned self] error in
                 // broadcast started

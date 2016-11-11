@@ -9,16 +9,17 @@
 import Foundation
 import ReplayKit
 
-class MovieClipHandler: RPBroadcastMP4ClipHandler {
+class MovieClipHandler: RTMPMP4ClipHandler/*RPBroadcastMP4ClipHandler*/ {
     
     override func processMP4Clip(with mp4ClipURL: URL?, setupInfo: [String : NSObject]?, finished: Bool) {
         // save mp4 clip to group
-        
         let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.victorchee.broadcast")
         let destinationURL = groupURL?.appendingPathComponent(mp4ClipURL!.lastPathComponent)
         try? FileManager.default.copyItem(at: mp4ClipURL!, to: destinationURL!)
         
+        super.processMP4Clip(with: mp4ClipURL, setupInfo: setupInfo, finished: finished)
         
+        /*
         // Get the endpoint url supplied by the UI extension in the service info dictionary
         let url = URL(string: setupInfo!["endpointURL"] as! String)
         
@@ -42,5 +43,11 @@ class MovieClipHandler: RPBroadcastMP4ClipHandler {
         }
         
         uploadTask.resume()
+        */
+    }
+    
+    override func finishedProcessingMP4Clip(withUpdatedBroadcastConfiguration broadcastConfiguration: RPBroadcastConfiguration?, error: Error?) {
+        print("\(broadcastConfiguration):\(error)")
+        super.finishedProcessingMP4Clip(withUpdatedBroadcastConfiguration: broadcastConfiguration, error: error)
     }
 }
