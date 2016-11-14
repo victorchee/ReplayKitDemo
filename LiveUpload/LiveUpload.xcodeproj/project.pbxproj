@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5B1F571DD9B1D2004EB4FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F561DD9B1D2004EB4FF /* main.m */; };
+		1F5B1F5A1DD9B1D2004EB4FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */; };
+		1F5B1F5D1DD9B1D2004EB4FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */; };
+		1F5B1F601DD9B1D2004EB4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */; };
+		1F5B1F621DD9B1D2004EB4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */; };
+		1F5B1F651DD9B1D2004EB4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */; };
+		1F5B1F731DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
+		1F5B1F771DD9B1E7004EB4FF /* MovieClipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */; };
+		1F5B1F7A1DD9B1E7004EB4FF /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F791DD9B1E7004EB4FF /* SampleHandler.m */; };
+		1F5B1F811DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
+		1F5B1F831DD9B1E7004EB4FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */; };
+		1F5B1F871DD9B1E7004EB4FF /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */; };
+		1F5B1F8A1DD9B1E7004EB4FF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */; };
+		1F5B1F8E1DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F5B1F911DD9B1E7004EB4FF /* LiveUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F5B1F8C1DD9B1E7004EB4FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F5B1F7F1DD9B1E7004EB4FF;
+			remoteInfo = LiveUploadExtensionUI;
+		};
+		1F5B1F8F1DD9B1E7004EB4FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F5B1F6F1DD9B1E7004EB4FF;
+			remoteInfo = LiveUploadExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F5B1F981DD9B1E8004EB4FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F5B1F8E1DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex in Embed App Extensions */,
+				1F5B1F911DD9B1E7004EB4FF /* LiveUploadExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B1F561DD9B1D2004EB4FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F5B1F581DD9B1D2004EB4FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F5B1F5B1DD9B1D2004EB4FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F5B1F5F1DD9B1D2004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F5B1F641DD9B1D2004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F5B1F661DD9B1D2004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		1F5B1F751DD9B1E7004EB4FF /* MovieClipHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieClipHandler.h; sourceTree = "<group>"; };
+		1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieClipHandler.m; sourceTree = "<group>"; };
+		1F5B1F781DD9B1E7004EB4FF /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		1F5B1F791DD9B1E7004EB4FF /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		1F5B1F7B1DD9B1E7004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F5B1F851DD9B1E7004EB4FF /* BroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastViewController.h; sourceTree = "<group>"; };
+		1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastViewController.m; sourceTree = "<group>"; };
+		1F5B1F891DD9B1E7004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1F5B1F8B1DD9B1E7004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F5B1F4F1DD9B1D2004EB4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F6D1DD9B1E7004EB4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F731DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F7D1DD9B1E7004EB4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F811DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */,
+				1F5B1F831DD9B1E7004EB4FF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F5B1F491DD9B1D2004EB4FF = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F541DD9B1D2004EB4FF /* LiveUpload */,
+				1F5B1F741DD9B1E7004EB4FF /* LiveUploadExtension */,
+				1F5B1F841DD9B1E7004EB4FF /* LiveUploadExtensionUI */,
+				1F5B1F711DD9B1E7004EB4FF /* Frameworks */,
+				1F5B1F531DD9B1D2004EB4FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F5B1F531DD9B1D2004EB4FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */,
+				1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */,
+				1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F5B1F541DD9B1D2004EB4FF /* LiveUpload */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F581DD9B1D2004EB4FF /* AppDelegate.h */,
+				1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */,
+				1F5B1F5B1DD9B1D2004EB4FF /* ViewController.h */,
+				1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */,
+				1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */,
+				1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */,
+				1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */,
+				1F5B1F661DD9B1D2004EB4FF /* Info.plist */,
+				1F5B1F551DD9B1D2004EB4FF /* Supporting Files */,
+			);
+			path = LiveUpload;
+			sourceTree = "<group>";
+		};
+		1F5B1F551DD9B1D2004EB4FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F561DD9B1D2004EB4FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F5B1F711DD9B1E7004EB4FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */,
+				1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F5B1F741DD9B1E7004EB4FF /* LiveUploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F751DD9B1E7004EB4FF /* MovieClipHandler.h */,
+				1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */,
+				1F5B1F781DD9B1E7004EB4FF /* SampleHandler.h */,
+				1F5B1F791DD9B1E7004EB4FF /* SampleHandler.m */,
+				1F5B1F7B1DD9B1E7004EB4FF /* Info.plist */,
+			);
+			path = LiveUploadExtension;
+			sourceTree = "<group>";
+		};
+		1F5B1F841DD9B1E7004EB4FF /* LiveUploadExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B1F851DD9B1E7004EB4FF /* BroadcastViewController.h */,
+				1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */,
+				1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */,
+				1F5B1F8B1DD9B1E7004EB4FF /* Info.plist */,
+			);
+			path = LiveUploadExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F5B1F511DD9B1D2004EB4FF /* LiveUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5B1F691DD9B1D2004EB4FF /* Build configuration list for PBXNativeTarget "LiveUpload" */;
+			buildPhases = (
+				1F5B1F4E1DD9B1D2004EB4FF /* Sources */,
+				1F5B1F4F1DD9B1D2004EB4FF /* Frameworks */,
+				1F5B1F501DD9B1D2004EB4FF /* Resources */,
+				1F5B1F981DD9B1E8004EB4FF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5B1F8D1DD9B1E7004EB4FF /* PBXTargetDependency */,
+				1F5B1F901DD9B1E7004EB4FF /* PBXTargetDependency */,
+			);
+			name = LiveUpload;
+			productName = LiveUpload;
+			productReference = 1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5B1F951DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtension" */;
+			buildPhases = (
+				1F5B1F6C1DD9B1E7004EB4FF /* Sources */,
+				1F5B1F6D1DD9B1E7004EB4FF /* Frameworks */,
+				1F5B1F6E1DD9B1E7004EB4FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveUploadExtension;
+			productName = LiveUploadExtension;
+			productReference = 1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5B1F921DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtensionUI" */;
+			buildPhases = (
+				1F5B1F7C1DD9B1E7004EB4FF /* Sources */,
+				1F5B1F7D1DD9B1E7004EB4FF /* Frameworks */,
+				1F5B1F7E1DD9B1E7004EB4FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveUploadExtensionUI;
+			productName = LiveUploadExtensionUI;
+			productReference = 1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F5B1F4A1DD9B1D2004EB4FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = VictorChee;
+				TargetAttributes = {
+					1F5B1F511DD9B1D2004EB4FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1F5B1F6F1DD9B1E7004EB4FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1F5B1F7F1DD9B1E7004EB4FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F5B1F4D1DD9B1D2004EB4FF /* Build configuration list for PBXProject "LiveUpload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F5B1F491DD9B1D2004EB4FF;
+			productRefGroup = 1F5B1F531DD9B1D2004EB4FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F5B1F511DD9B1D2004EB4FF /* LiveUpload */,
+				1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */,
+				1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F5B1F501DD9B1D2004EB4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F651DD9B1D2004EB4FF /* LaunchScreen.storyboard in Resources */,
+				1F5B1F621DD9B1D2004EB4FF /* Assets.xcassets in Resources */,
+				1F5B1F601DD9B1D2004EB4FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F6E1DD9B1E7004EB4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F7E1DD9B1E7004EB4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F8A1DD9B1E7004EB4FF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F5B1F4E1DD9B1D2004EB4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F5D1DD9B1D2004EB4FF /* ViewController.m in Sources */,
+				1F5B1F5A1DD9B1D2004EB4FF /* AppDelegate.m in Sources */,
+				1F5B1F571DD9B1D2004EB4FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F6C1DD9B1E7004EB4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F7A1DD9B1E7004EB4FF /* SampleHandler.m in Sources */,
+				1F5B1F771DD9B1E7004EB4FF /* MovieClipHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5B1F7C1DD9B1E7004EB4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5B1F871DD9B1E7004EB4FF /* BroadcastViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F5B1F8D1DD9B1E7004EB4FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */;
+			targetProxy = 1F5B1F8C1DD9B1E7004EB4FF /* PBXContainerItemProxy */;
+		};
+		1F5B1F901DD9B1E7004EB4FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */;
+			targetProxy = 1F5B1F8F1DD9B1E7004EB4FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5B1F5F1DD9B1D2004EB4FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5B1F641DD9B1D2004EB4FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5B1F891DD9B1E7004EB4FF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F5B1F671DD9B1D2004EB4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F5B1F681DD9B1D2004EB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F5B1F6A1DD9B1D2004EB4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F5B1F6B1DD9B1D2004EB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F5B1F931DD9B1E8004EB4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiveUploadExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F5B1F941DD9B1E8004EB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiveUploadExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1F5B1F961DD9B1E8004EB4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiveUploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F5B1F971DD9B1E8004EB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiveUploadExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F5B1F4D1DD9B1D2004EB4FF /* Build configuration list for PBXProject "LiveUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5B1F671DD9B1D2004EB4FF /* Debug */,
+				1F5B1F681DD9B1D2004EB4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5B1F691DD9B1D2004EB4FF /* Build configuration list for PBXNativeTarget "LiveUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5B1F6A1DD9B1D2004EB4FF /* Debug */,
+				1F5B1F6B1DD9B1D2004EB4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F5B1F921DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5B1F931DD9B1E8004EB4FF /* Debug */,
+				1F5B1F941DD9B1E8004EB4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F5B1F951DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5B1F961DD9B1E8004EB4FF /* Debug */,
+				1F5B1F971DD9B1E8004EB4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
+}
