@@ -9,7 +9,7 @@
 import Foundation
 import ReplayKit
 
-class MovieClipHandler: RTMPMP4ClipHandler/*RPBroadcastMP4ClipHandler*/ {
+class MovieClipHandler: RPBroadcastMP4ClipHandler {
     
     override func processMP4Clip(with mp4ClipURL: URL?, setupInfo: [String : NSObject]?, finished: Bool) {
         // save mp4 clip to group

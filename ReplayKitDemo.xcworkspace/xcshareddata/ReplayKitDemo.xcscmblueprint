@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "043919F0063AAEA4C90C2787B056B9B203C5F17E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "043919F0063AAEA4C90C2787B056B9B203C5F17E" : 9223372036854775807,
+    "21A277AE25FFC5157FFA61D6D985F3C60BC38E78" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "09F15A1D-614A-4260-AAD5-527460DAE254",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "043919F0063AAEA4C90C2787B056B9B203C5F17E" : "ReplayKitDemo\/",
+    "21A277AE25FFC5157FFA61D6D985F3C60BC38E78" : "..\/ThirdParty\/LFLiveKit"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ReplayKitDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ReplayKitDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/victorchee\/ReplayKitDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "043919F0063AAEA4C90C2787B056B9B203C5F17E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LaiFengiOS\/LFLiveKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21A277AE25FFC5157FFA61D6D985F3C60BC38E78"
+    }
+  ]
+}
