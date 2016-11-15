@@ -1,12 +1,13 @@
 //
 //  SampleHandler.h
-//  LiveUploadExtension
+//  KSYRKUploadExt
 //
-//  Created by Migu on 2016/11/14.
-//  Copyright © 2016年 VictorChee. All rights reserved.
+//  Created by yiqian on 9/28/16.
+//  Copyright © 2016 ksyun. All rights reserved.
 //
 
 #import <ReplayKit/ReplayKit.h>
+
 
 @interface SampleHandler : RPBroadcastSampleHandler
 

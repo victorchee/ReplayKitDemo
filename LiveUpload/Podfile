@@ -1,0 +1,21 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'LiveUploadExtension' do
+	pod 'GPUImage'
+    pod 'libksygpulive/libksygpulive', '1.8.7'
+end
+
+target 'LiveUpload' do
+    pod 'GPUImage'
+    pod 'libksygpulive/libksygpulive', '1.8.7'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    puts "!!!! #{target.name}"
+    target.build_configurations.each do |config|            config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+    end
+  end
+end

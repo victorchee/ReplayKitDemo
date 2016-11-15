@@ -20,6 +20,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let recorder = RPScreenRecorder.shared()
+        recorder.isMicrophoneEnabled = true
+        recorder.isCameraEnabled = true
+        AVAudioSession.sharedInstance().requestRecordPermission { (granted) in
+            
+        }
+        
         let emitterLayer = CAEmitterLayer()
         emitterLayer.frame = view.bounds
         emitterLayer.renderMode = kCAEmitterLayerAdditive
@@ -46,18 +54,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func broadcast(_ sender: UIBarButtonItem) {
-        RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
-            if let broadcastActivityViewController = broadcastActivityViewController {
-                broadcastActivityViewController.delegate = self
+        if RPScreenRecorder.shared().isRecording {
+            broadcastController?.finishBroadcast { [unowned self] error in
+                print("finish broadcast with error: \(error)")
                 
-                broadcastActivityViewController.modalPresentationStyle = .formSheet
-                
-                if let popover = broadcastActivityViewController.popoverPresentationController {
-                    popover.barButtonItem = sender
-                    popover.permittedArrowDirections = .any
+                self.pauseBarButton.isEnabled = false
+                self.resumeBarButton.isEnabled = false
+                sender.isEnabled = false
+            }
+        } else {
+            RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
+                if let broadcastActivityViewController = broadcastActivityViewController {
+                    broadcastActivityViewController.delegate = self
+                    
+                    broadcastActivityViewController.modalPresentationStyle = .popover
+                    
+                    if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                        broadcastActivityViewController.popoverPresentationController?.barButtonItem = sender
+                    }
+                    
+                    self.present(broadcastActivityViewController, animated: true)
                 }
-                
-                self.present(broadcastActivityViewController, animated: true)
             }
         }
     }
@@ -99,19 +116,14 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
         self.broadcastController = broadcastController
         self.broadcastController?.delegate = self
         broadcastActivityViewController.dismiss(animated: true) {
-            /*let recorder = RPScreenRecorder.shared()
-            recorder.isMicrophoneEnabled = true
-            recorder.isCameraEnabled = true
-            recorder.startRecording { [unowned self] error in
-                if let cameraPreviewView = recorder.cameraPreviewView {
-                    cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 200, height: 200)
-                    self.view.addSubview(cameraPreviewView)
-                }
-            }*/
-            
             self.broadcastController?.startBroadcast { [unowned self] error in
                 // broadcast started
                 print("broadcast started with error: \(error)")
+                
+                if let cameraPreviewView = RPScreenRecorder.shared().cameraPreviewView {
+                    cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 200, height: 200)
+                    self.view.addSubview(cameraPreviewView)
+                }
                 
                 self.pauseBarButton.isEnabled = true
                 self.resumeBarButton.isEnabled = false

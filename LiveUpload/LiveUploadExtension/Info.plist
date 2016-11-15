@@ -25,9 +25,16 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.broadcast-services</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>MovieClipHandler</string>
+		<string>SampleHandler</string>
 		<key>RPBroadcastProcessMode</key>
-		<string>RPBroadcastProcessModeMP4Clip</string>
+		<string>RPBroadcastProcessModeSampleBuffer</string>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone Usage Description</string>
 </dict>
 </plist>

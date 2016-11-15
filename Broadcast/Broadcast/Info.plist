@@ -43,5 +43,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Use camera to broadcast.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Use microphone to broadcast.</string>
 </dict>
 </plist>
