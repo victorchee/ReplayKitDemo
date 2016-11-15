@@ -1,723 +1,1559 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1F5B1F571DD9B1D2004EB4FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F561DD9B1D2004EB4FF /* main.m */; };
-		1F5B1F5A1DD9B1D2004EB4FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */; };
-		1F5B1F5D1DD9B1D2004EB4FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */; };
-		1F5B1F601DD9B1D2004EB4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */; };
-		1F5B1F621DD9B1D2004EB4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */; };
-		1F5B1F651DD9B1D2004EB4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */; };
-		1F5B1F731DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
-		1F5B1F811DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
-		1F5B1F831DD9B1E7004EB4FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */; };
-		1F5B1F871DD9B1E7004EB4FF /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */; };
-		1F5B1F8A1DD9B1E7004EB4FF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */; };
-		1F5B1F8E1DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1F5B1F911DD9B1E7004EB4FF /* LiveUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1F5B25D91DDB053D004EB4FF /* KSYRKStreamerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */; };
-		1F5B25DA1DDB053D004EB4FF /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B25D81DDB053D004EB4FF /* SampleHandler.m */; };
-		9C3FF5C283E8D85D19BC4E28 /* Pods_LiveUploadExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F881039CC13CDA0BEFB4F115 /* Pods_LiveUploadExtension.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1F5B1F8C1DD9B1E7004EB4FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F5B1F7F1DD9B1E7004EB4FF;
-			remoteInfo = LiveUploadExtensionUI;
-		};
-		1F5B1F8F1DD9B1E7004EB4FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F5B1F6F1DD9B1E7004EB4FF;
-			remoteInfo = LiveUploadExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1F5B1F981DD9B1E8004EB4FF /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				1F5B1F8E1DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex in Embed App Extensions */,
-				1F5B1F911DD9B1E7004EB4FF /* LiveUploadExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F5B1F561DD9B1D2004EB4FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F5B1F581DD9B1D2004EB4FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F5B1F5B1DD9B1D2004EB4FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1F5B1F5F1DD9B1D2004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F5B1F641DD9B1D2004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F5B1F661DD9B1D2004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
-		1F5B1F7B1DD9B1E7004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1F5B1F851DD9B1E7004EB4FF /* BroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastViewController.h; sourceTree = "<group>"; };
-		1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastViewController.m; sourceTree = "<group>"; };
-		1F5B1F891DD9B1E7004EB4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		1F5B1F8B1DD9B1E7004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F5B25D51DDB053D004EB4FF /* KSYRKStreamerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYRKStreamerKit.h; sourceTree = "<group>"; };
-		1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYRKStreamerKit.m; sourceTree = "<group>"; };
-		1F5B25D71DDB053D004EB4FF /* SampleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
-		1F5B25D81DDB053D004EB4FF /* SampleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
-		67C86D7C0220024979B53DA1 /* Pods-LiveUploadExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUploadExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.release.xcconfig"; sourceTree = "<group>"; };
-		93087C7DA106E2CE83D8A814 /* Pods-LiveUploadExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUploadExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		AFF2BB578042BE6C35D1AB89 /* Pods_LiveUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F881039CC13CDA0BEFB4F115 /* Pods_LiveUploadExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUploadExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1F5B1F4F1DD9B1D2004EB4FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F6D1DD9B1E7004EB4FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F731DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */,
-				9C3FF5C283E8D85D19BC4E28 /* Pods_LiveUploadExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F7D1DD9B1E7004EB4FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F811DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */,
-				1F5B1F831DD9B1E7004EB4FF /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		01AB56908D7ECA850EB31704 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				93087C7DA106E2CE83D8A814 /* Pods-LiveUploadExtension.debug.xcconfig */,
-				67C86D7C0220024979B53DA1 /* Pods-LiveUploadExtension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1F5B1F491DD9B1D2004EB4FF = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F541DD9B1D2004EB4FF /* LiveUpload */,
-				1F5B1F741DD9B1E7004EB4FF /* LiveUploadExtension */,
-				1F5B1F841DD9B1E7004EB4FF /* LiveUploadExtensionUI */,
-				1F5B1F711DD9B1E7004EB4FF /* Frameworks */,
-				1F5B1F531DD9B1D2004EB4FF /* Products */,
-				01AB56908D7ECA850EB31704 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		1F5B1F531DD9B1D2004EB4FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */,
-				1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */,
-				1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1F5B1F541DD9B1D2004EB4FF /* LiveUpload */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F581DD9B1D2004EB4FF /* AppDelegate.h */,
-				1F5B1F591DD9B1D2004EB4FF /* AppDelegate.m */,
-				1F5B1F5B1DD9B1D2004EB4FF /* ViewController.h */,
-				1F5B1F5C1DD9B1D2004EB4FF /* ViewController.m */,
-				1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */,
-				1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */,
-				1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */,
-				1F5B1F661DD9B1D2004EB4FF /* Info.plist */,
-				1F5B1F551DD9B1D2004EB4FF /* Supporting Files */,
-			);
-			path = LiveUpload;
-			sourceTree = "<group>";
-		};
-		1F5B1F551DD9B1D2004EB4FF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F561DD9B1D2004EB4FF /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1F5B1F711DD9B1E7004EB4FF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */,
-				1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */,
-				F881039CC13CDA0BEFB4F115 /* Pods_LiveUploadExtension.framework */,
-				AFF2BB578042BE6C35D1AB89 /* Pods_LiveUpload.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1F5B1F741DD9B1E7004EB4FF /* LiveUploadExtension */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B25D51DDB053D004EB4FF /* KSYRKStreamerKit.h */,
-				1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */,
-				1F5B25D71DDB053D004EB4FF /* SampleHandler.h */,
-				1F5B25D81DDB053D004EB4FF /* SampleHandler.m */,
-				1F5B1F7B1DD9B1E7004EB4FF /* Info.plist */,
-			);
-			path = LiveUploadExtension;
-			sourceTree = "<group>";
-		};
-		1F5B1F841DD9B1E7004EB4FF /* LiveUploadExtensionUI */ = {
-			isa = PBXGroup;
-			children = (
-				1F5B1F851DD9B1E7004EB4FF /* BroadcastViewController.h */,
-				1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */,
-				1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */,
-				1F5B1F8B1DD9B1E7004EB4FF /* Info.plist */,
-			);
-			path = LiveUploadExtensionUI;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		1F5B1F511DD9B1D2004EB4FF /* LiveUpload */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F5B1F691DD9B1D2004EB4FF /* Build configuration list for PBXNativeTarget "LiveUpload" */;
-			buildPhases = (
-				AE50CD89A79128FA43EFE889 /* [CP] Check Pods Manifest.lock */,
-				1F5B1F4E1DD9B1D2004EB4FF /* Sources */,
-				1F5B1F4F1DD9B1D2004EB4FF /* Frameworks */,
-				1F5B1F501DD9B1D2004EB4FF /* Resources */,
-				1F5B1F981DD9B1E8004EB4FF /* Embed App Extensions */,
-				D879A9D4005AE8AA4F6B32C2 /* [CP] Embed Pods Frameworks */,
-				3799D5095861AD4FCFF452EB /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1F5B1F8D1DD9B1E7004EB4FF /* PBXTargetDependency */,
-				1F5B1F901DD9B1E7004EB4FF /* PBXTargetDependency */,
-			);
-			name = LiveUpload;
-			productName = LiveUpload;
-			productReference = 1F5B1F521DD9B1D2004EB4FF /* LiveUpload.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F5B1F951DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtension" */;
-			buildPhases = (
-				29C29A5C08C4E59630E3A0B6 /* [CP] Check Pods Manifest.lock */,
-				1F5B1F6C1DD9B1E7004EB4FF /* Sources */,
-				1F5B1F6D1DD9B1E7004EB4FF /* Frameworks */,
-				1F5B1F6E1DD9B1E7004EB4FF /* Resources */,
-				C9FCE7FDE36405BED3006E0D /* [CP] Embed Pods Frameworks */,
-				C08437CD8143046AB42E8761 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LiveUploadExtension;
-			productName = LiveUploadExtension;
-			productReference = 1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F5B1F921DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtensionUI" */;
-			buildPhases = (
-				1F5B1F7C1DD9B1E7004EB4FF /* Sources */,
-				1F5B1F7D1DD9B1E7004EB4FF /* Frameworks */,
-				1F5B1F7E1DD9B1E7004EB4FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LiveUploadExtensionUI;
-			productName = LiveUploadExtensionUI;
-			productReference = 1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		1F5B1F4A1DD9B1D2004EB4FF /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = VictorChee;
-				TargetAttributes = {
-					1F5B1F511DD9B1D2004EB4FF = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TN392GAYUP;
-						ProvisioningStyle = Automatic;
-					};
-					1F5B1F6F1DD9B1E7004EB4FF = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TN392GAYUP;
-						ProvisioningStyle = Automatic;
-					};
-					1F5B1F7F1DD9B1E7004EB4FF = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TN392GAYUP;
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
-			buildConfigurationList = 1F5B1F4D1DD9B1D2004EB4FF /* Build configuration list for PBXProject "LiveUpload" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 1F5B1F491DD9B1D2004EB4FF;
-			productRefGroup = 1F5B1F531DD9B1D2004EB4FF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				1F5B1F511DD9B1D2004EB4FF /* LiveUpload */,
-				1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */,
-				1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1F5B1F501DD9B1D2004EB4FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F651DD9B1D2004EB4FF /* LaunchScreen.storyboard in Resources */,
-				1F5B1F621DD9B1D2004EB4FF /* Assets.xcassets in Resources */,
-				1F5B1F601DD9B1D2004EB4FF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F6E1DD9B1E7004EB4FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F7E1DD9B1E7004EB4FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F8A1DD9B1E7004EB4FF /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		29C29A5C08C4E59630E3A0B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3799D5095861AD4FCFF452EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE50CD89A79128FA43EFE889 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C08437CD8143046AB42E8761 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9FCE7FDE36405BED3006E0D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D879A9D4005AE8AA4F6B32C2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		1F5B1F4E1DD9B1D2004EB4FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F5D1DD9B1D2004EB4FF /* ViewController.m in Sources */,
-				1F5B1F5A1DD9B1D2004EB4FF /* AppDelegate.m in Sources */,
-				1F5B1F571DD9B1D2004EB4FF /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F6C1DD9B1E7004EB4FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B25DA1DDB053D004EB4FF /* SampleHandler.m in Sources */,
-				1F5B25D91DDB053D004EB4FF /* KSYRKStreamerKit.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5B1F7C1DD9B1E7004EB4FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5B1F871DD9B1E7004EB4FF /* BroadcastViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1F5B1F8D1DD9B1E7004EB4FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1F5B1F7F1DD9B1E7004EB4FF /* LiveUploadExtensionUI */;
-			targetProxy = 1F5B1F8C1DD9B1E7004EB4FF /* PBXContainerItemProxy */;
-		};
-		1F5B1F901DD9B1E7004EB4FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1F5B1F6F1DD9B1E7004EB4FF /* LiveUploadExtension */;
-			targetProxy = 1F5B1F8F1DD9B1E7004EB4FF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1F5B1F5E1DD9B1D2004EB4FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F5B1F5F1DD9B1D2004EB4FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F5B1F641DD9B1D2004EB4FF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1F5B1F881DD9B1E7004EB4FF /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F5B1F891DD9B1E7004EB4FF /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		1F5B1F671DD9B1D2004EB4FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1F5B1F681DD9B1D2004EB4FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1F5B1F6A1DD9B1D2004EB4FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUpload/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		1F5B1F6B1DD9B1D2004EB4FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUpload/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		1F5B1F931DD9B1E8004EB4FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUploadExtensionUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtensionUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1F5B1F941DD9B1E8004EB4FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUploadExtensionUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtensionUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1F5B1F961DD9B1E8004EB4FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93087C7DA106E2CE83D8A814 /* Pods-LiveUploadExtension.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUploadExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LiveUploadExtension/libksygpulive/prebuilt/libs",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1F5B1F971DD9B1E8004EB4FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67C86D7C0220024979B53DA1 /* Pods-LiveUploadExtension.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = TN392GAYUP;
-				INFOPLIST_FILE = LiveUploadExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LiveUploadExtension/libksygpulive/prebuilt/libs",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.LiveUpload.LiveUploadExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1F5B1F4D1DD9B1D2004EB4FF /* Build configuration list for PBXProject "LiveUpload" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F5B1F671DD9B1D2004EB4FF /* Debug */,
-				1F5B1F681DD9B1D2004EB4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F5B1F691DD9B1D2004EB4FF /* Build configuration list for PBXNativeTarget "LiveUpload" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F5B1F6A1DD9B1D2004EB4FF /* Debug */,
-				1F5B1F6B1DD9B1D2004EB4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F5B1F921DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtensionUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F5B1F931DD9B1E8004EB4FF /* Debug */,
-				1F5B1F941DD9B1E8004EB4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F5B1F951DD9B1E8004EB4FF /* Build configuration list for PBXNativeTarget "LiveUploadExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F5B1F961DD9B1E8004EB4FF /* Debug */,
-				1F5B1F971DD9B1E8004EB4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 1F5B1F4A1DD9B1D2004EB4FF /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01AB56908D7ECA850EB31704</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93087C7DA106E2CE83D8A814</string>
+				<string>67C86D7C0220024979B53DA1</string>
+				<string>437AC6EFE34BCBD41A3ECCB3</string>
+				<string>68E6BDE620C43C18B460D818</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F491DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F541DD9B1D2004EB4FF</string>
+				<string>1F5B1F741DD9B1E7004EB4FF</string>
+				<string>1F5B1F841DD9B1E7004EB4FF</string>
+				<string>1F5B1F711DD9B1E7004EB4FF</string>
+				<string>1F5B1F531DD9B1D2004EB4FF</string>
+				<string>01AB56908D7ECA850EB31704</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F4A1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0810</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>VictorChee</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>1F5B1F511DD9B1D2004EB4FF</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>TN392GAYUP</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>1F5B1F6F1DD9B1E7004EB4FF</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>TN392GAYUP</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>1F5B1F7F1DD9B1E7004EB4FF</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>TN392GAYUP</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>1F5B1F4D1DD9B1D2004EB4FF</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>1F5B1F491DD9B1D2004EB4FF</string>
+			<key>productRefGroup</key>
+			<string>1F5B1F531DD9B1D2004EB4FF</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>1F5B1F511DD9B1D2004EB4FF</string>
+				<string>1F5B1F6F1DD9B1E7004EB4FF</string>
+				<string>1F5B1F7F1DD9B1E7004EB4FF</string>
+			</array>
+		</dict>
+		<key>1F5B1F4D1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1F5B1F671DD9B1D2004EB4FF</string>
+				<string>1F5B1F681DD9B1D2004EB4FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1F5B1F4E1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F5D1DD9B1D2004EB4FF</string>
+				<string>1F5B1F5A1DD9B1D2004EB4FF</string>
+				<string>1F5B1F571DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F4F1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EFA551776ABCC84817D73992</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F501DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F651DD9B1D2004EB4FF</string>
+				<string>1F5B1F621DD9B1D2004EB4FF</string>
+				<string>1F5B1F601DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F511DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1F5B1F691DD9B1D2004EB4FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AE50CD89A79128FA43EFE889</string>
+				<string>1F5B1F4E1DD9B1D2004EB4FF</string>
+				<string>1F5B1F4F1DD9B1D2004EB4FF</string>
+				<string>1F5B1F501DD9B1D2004EB4FF</string>
+				<string>1F5B1F981DD9B1E8004EB4FF</string>
+				<string>D879A9D4005AE8AA4F6B32C2</string>
+				<string>3799D5095861AD4FCFF452EB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>1F5B1F8D1DD9B1E7004EB4FF</string>
+				<string>1F5B1F901DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LiveUpload</string>
+			<key>productName</key>
+			<string>LiveUpload</string>
+			<key>productReference</key>
+			<string>1F5B1F521DD9B1D2004EB4FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>1F5B1F521DD9B1D2004EB4FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LiveUpload.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1F5B1F531DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F521DD9B1D2004EB4FF</string>
+				<string>1F5B1F701DD9B1E7004EB4FF</string>
+				<string>1F5B1F801DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F541DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F581DD9B1D2004EB4FF</string>
+				<string>1F5B1F591DD9B1D2004EB4FF</string>
+				<string>1F5B1F5B1DD9B1D2004EB4FF</string>
+				<string>1F5B1F5C1DD9B1D2004EB4FF</string>
+				<string>1F5B1F5E1DD9B1D2004EB4FF</string>
+				<string>1F5B1F611DD9B1D2004EB4FF</string>
+				<string>1F5B1F631DD9B1D2004EB4FF</string>
+				<string>1F5B1F661DD9B1D2004EB4FF</string>
+				<string>1F5B1F551DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LiveUpload</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F551DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F561DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F561DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F571DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F561DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F581DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F591DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F5A1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F591DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F5B1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F5C1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F5D1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F5C1DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F5E1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F5F1DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F5F1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F601DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F5E1DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F611DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F621DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F611DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F631DD9B1D2004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F641DD9B1D2004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F641DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F651DD9B1D2004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F631DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F661DD9B1D2004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F671DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1F5B1F681DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1F5B1F691DD9B1D2004EB4FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1F5B1F6A1DD9B1D2004EB4FF</string>
+				<string>1F5B1F6B1DD9B1D2004EB4FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1F5B1F6A1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>437AC6EFE34BCBD41A3ECCB3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUpload/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1F5B1F6B1DD9B1D2004EB4FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>68E6BDE620C43C18B460D818</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUpload/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1F5B1F6C1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B25DA1DDB053D004EB4FF</string>
+				<string>1F5B25D91DDB053D004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F6D1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F731DD9B1E7004EB4FF</string>
+				<string>9C3FF5C283E8D85D19BC4E28</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F6E1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F6F1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1F5B1F951DD9B1E8004EB4FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>29C29A5C08C4E59630E3A0B6</string>
+				<string>1F5B1F6C1DD9B1E7004EB4FF</string>
+				<string>1F5B1F6D1DD9B1E7004EB4FF</string>
+				<string>1F5B1F6E1DD9B1E7004EB4FF</string>
+				<string>C9FCE7FDE36405BED3006E0D</string>
+				<string>C08437CD8143046AB42E8761</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LiveUploadExtension</string>
+			<key>productName</key>
+			<string>LiveUploadExtension</string>
+			<key>productReference</key>
+			<string>1F5B1F701DD9B1E7004EB4FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.app-extension</string>
+		</dict>
+		<key>1F5B1F701DD9B1E7004EB4FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.app-extension</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LiveUploadExtension.appex</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1F5B1F711DD9B1E7004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F721DD9B1E7004EB4FF</string>
+				<string>1F5B1F821DD9B1E7004EB4FF</string>
+				<string>F881039CC13CDA0BEFB4F115</string>
+				<string>AFF2BB578042BE6C35D1AB89</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F721DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ReplayKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/ReplayKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1F5B1F731DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F721DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F741DD9B1E7004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B25D51DDB053D004EB4FF</string>
+				<string>1F5B25D61DDB053D004EB4FF</string>
+				<string>1F5B25D71DDB053D004EB4FF</string>
+				<string>1F5B25D81DDB053D004EB4FF</string>
+				<string>1F5B1F7B1DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LiveUploadExtension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F7B1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F7C1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F871DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F7D1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F811DD9B1E7004EB4FF</string>
+				<string>1F5B1F831DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F7E1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F8A1DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B1F7F1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1F5B1F921DD9B1E8004EB4FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1F5B1F7C1DD9B1E7004EB4FF</string>
+				<string>1F5B1F7D1DD9B1E7004EB4FF</string>
+				<string>1F5B1F7E1DD9B1E7004EB4FF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LiveUploadExtensionUI</string>
+			<key>productName</key>
+			<string>LiveUploadExtensionUI</string>
+			<key>productReference</key>
+			<string>1F5B1F801DD9B1E7004EB4FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.app-extension</string>
+		</dict>
+		<key>1F5B1F801DD9B1E7004EB4FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.app-extension</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LiveUploadExtensionUI.appex</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1F5B1F811DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F721DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F821DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1F5B1F831DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F821DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F841DD9B1E7004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F851DD9B1E7004EB4FF</string>
+				<string>1F5B1F861DD9B1E7004EB4FF</string>
+				<string>1F5B1F881DD9B1E7004EB4FF</string>
+				<string>1F5B1F8B1DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LiveUploadExtensionUI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F851DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BroadcastViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F861DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BroadcastViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F871DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F861DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F881DD9B1E7004EB4FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1F5B1F891DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainInterface.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F891DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/MainInterface.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F8A1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F881DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B1F8B1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B1F8C1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>1F5B1F4A1DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F5B1F7F1DD9B1E7004EB4FF</string>
+			<key>remoteInfo</key>
+			<string>LiveUploadExtensionUI</string>
+		</dict>
+		<key>1F5B1F8D1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>1F5B1F7F1DD9B1E7004EB4FF</string>
+			<key>targetProxy</key>
+			<string>1F5B1F8C1DD9B1E7004EB4FF</string>
+		</dict>
+		<key>1F5B1F8E1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F801DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1F5B1F8F1DD9B1E7004EB4FF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>1F5B1F4A1DD9B1D2004EB4FF</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F5B1F6F1DD9B1E7004EB4FF</string>
+			<key>remoteInfo</key>
+			<string>LiveUploadExtension</string>
+		</dict>
+		<key>1F5B1F901DD9B1E7004EB4FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>1F5B1F6F1DD9B1E7004EB4FF</string>
+			<key>targetProxy</key>
+			<string>1F5B1F8F1DD9B1E7004EB4FF</string>
+		</dict>
+		<key>1F5B1F911DD9B1E7004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B1F701DD9B1E7004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1F5B1F921DD9B1E8004EB4FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1F5B1F931DD9B1E8004EB4FF</string>
+				<string>1F5B1F941DD9B1E8004EB4FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1F5B1F931DD9B1E8004EB4FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUploadExtensionUI/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload.LiveUploadExtensionUI</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1F5B1F941DD9B1E8004EB4FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUploadExtensionUI/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload.LiveUploadExtensionUI</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1F5B1F951DD9B1E8004EB4FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1F5B1F961DD9B1E8004EB4FF</string>
+				<string>1F5B1F971DD9B1E8004EB4FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1F5B1F961DD9B1E8004EB4FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>93087C7DA106E2CE83D8A814</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUploadExtension/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/LiveUploadExtension/libksygpulive/prebuilt/libs</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload.LiveUploadExtension</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1F5B1F971DD9B1E8004EB4FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>67C86D7C0220024979B53DA1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>TN392GAYUP</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LiveUploadExtension/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/LiveUploadExtension/libksygpulive/prebuilt/libs</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.victorchee.LiveUpload.LiveUploadExtension</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1F5B1F981DD9B1E8004EB4FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>13</string>
+			<key>files</key>
+			<array>
+				<string>1F5B1F8E1DD9B1E7004EB4FF</string>
+				<string>1F5B1F911DD9B1E7004EB4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Embed App Extensions</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1F5B25D51DDB053D004EB4FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KSYRKStreamerKit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B25D61DDB053D004EB4FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>KSYRKStreamerKit.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B25D71DDB053D004EB4FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SampleHandler.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B25D81DDB053D004EB4FF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SampleHandler.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F5B25D91DDB053D004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B25D61DDB053D004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5B25DA1DDB053D004EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5B25D81DDB053D004EB4FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>29C29A5C08C4E59630E3A0B6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3799D5095861AD4FCFF452EB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>437AC6EFE34BCBD41A3ECCB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-LiveUpload.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>67C86D7C0220024979B53DA1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-LiveUploadExtension.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68E6BDE620C43C18B460D818</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-LiveUpload.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93087C7DA106E2CE83D8A814</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-LiveUploadExtension.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C3FF5C283E8D85D19BC4E28</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F881039CC13CDA0BEFB4F115</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AE50CD89A79128FA43EFE889</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AFF2BB578042BE6C35D1AB89</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_LiveUpload.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C08437CD8143046AB42E8761</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C9FCE7FDE36405BED3006E0D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D879A9D4005AE8AA4F6B32C2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EFA551776ABCC84817D73992</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AFF2BB578042BE6C35D1AB89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F881039CC13CDA0BEFB4F115</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_LiveUploadExtension.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>1F5B1F4A1DD9B1D2004EB4FF</string>
+</dict>
+</plist>

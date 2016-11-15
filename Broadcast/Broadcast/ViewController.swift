@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         emitterLayer.renderMode = kCAEmitterLayerAdditive
         emitterLayer.emitterPosition = view.center
         emitterLayer.emitterCells = [emitterCell(color: UIColor.orange)]
-//        view.layer.addSublayer(emitterLayer)
+        view.layer.addSublayer(emitterLayer)
     }
 
     override func didReceiveMemoryWarning() {

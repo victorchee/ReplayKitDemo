@@ -152,6 +152,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>0203D1291BBED84EA552C22B41E2B406</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>020F2A33D64D96E5763D89601DB6B7BC</key>
 		<dict>
 			<key>fileRef</key>
@@ -245,6 +258,20 @@
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
 		</dict>
+		<key>03FD6C36CAC7DBCAE662DCD4227DFBF3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1534B077DFC0903C88858B36340135F3</string>
+				<string>05787993328CCC236CF04A577B15BCAF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
 		<key>04EE460E037BA24CAD839DC8768E3D65</key>
 		<dict>
 			<key>fileRef</key>
@@ -283,6 +310,76 @@
 			<string>framework/Source/GPUImageDarkenBlendFilter.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05787993328CCC236CF04A577B15BCAF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7C266DC07B61D86F3D63D080C9BCA8A9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>NO</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-LiveUpload/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-LiveUpload/Pods-LiveUpload.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_LiveUpload</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>066B1D302F2EF1CD47C8F2E9DA0B84C2</key>
 		<dict>
@@ -1424,6 +1521,76 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1534B077DFC0903C88858B36340135F3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2D474F1D862191E40AE7C6D6ADDA8B98</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>APPLICATION_EXTENSION_API_ONLY</key>
+				<string>NO</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-LiveUpload/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-LiveUpload/Pods-LiveUpload.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_LiveUpload</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>15C7662F20B5A6FEFCE54C4B0B12B613</key>
 		<dict>
 			<key>fileRef</key>
@@ -1669,21 +1836,6 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>1A2C7FA710AC33617786BB72B10C986A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>22D40B50567F88B1D3AB44A47839E83C</string>
-				<string>37EEEB1FA591E4452CEE1AA517DDAD46</string>
-				<string>2FA277B73E900B8839BFFAF8CB4E63C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1A4C20A3239F88F3BE2F055C71D8B22F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1725,6 +1877,30 @@
 			<string>GPUImageUnsharpMaskFilter.m</string>
 			<key>path</key>
 			<string>framework/Source/GPUImageUnsharpMaskFilter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1AF626926D6C92CD2FF73E20BD874AD3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC74D202F2987535587216FE6267D3E1</string>
+				<string>D502477402FA365B80FBA8434B496517</string>
+				<string>D96E41FC8AD2C2347F5F6ED64942C285</string>
+				<string>BE82BA0FE7C76C849819574054C2D679</string>
+				<string>DCA730C04E83FBE4939E14FA2D63E1A0</string>
+				<string>3EEE7B54650F6FBC111362754393D5CB</string>
+				<string>605C7925ACE677983AAD62418432214C</string>
+				<string>508CB5C6EAAD48F61662CD51DC643CA0</string>
+				<string>2D474F1D862191E40AE7C6D6ADDA8B98</string>
+				<string>7C266DC07B61D86F3D63D080C9BCA8A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-LiveUpload</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-LiveUpload</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1861,19 +2037,6 @@
 			<string>GPUImage3x3TextureSamplingFilter.m</string>
 			<key>path</key>
 			<string>framework/Source/GPUImage3x3TextureSamplingFilter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CEBB9A2E931F072C44E45FA96B01CE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2075,21 +2238,6 @@
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
 		</dict>
-		<key>22D40B50567F88B1D3AB44A47839E83C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>GPUImage.framework</string>
-			<key>path</key>
-			<string>GPUImage.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>2332E9466DDE1B3D5C5AEFD24354C363</key>
 		<dict>
 			<key>fileRef</key>
@@ -2101,6 +2249,35 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>23E7CE15BA349EE0AF3941C4808780B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>247E9BFF27DC1B373F456E601450503A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A18A44F76E579E203F579A0BDC5BFE20</string>
+				<string>55FD395164918DDC4851DE00056DB940</string>
+				<string>A06977643667DA572AA33EBD7CC8A8AF</string>
+				<string>2A978322EA3ADCDFA13B496DDD30CB17</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>24E8235A3EB93B7F7E8E6368C5736FC4</key>
 		<dict>
@@ -2439,7 +2616,7 @@
 		<key>2A18BCF5B0A00C1918104470D7F4A918</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FCCA05361F61BB32EF2DFC7D26E886EB</string>
+			<string>ECB311CF4C224B647DF7F6F0AB21B48E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2449,6 +2626,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>2A978322EA3ADCDFA13B496DDD30CB17</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_LiveUploadExtension.framework</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>2AF7758952665D21D0BAC5C786E89F43</key>
 		<dict>
@@ -2535,6 +2727,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2BD73F5711F3962CC02EDCB94C2B81CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2C314BEA969CBF76256D12B6E220630A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2577,6 +2780,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>2D474F1D862191E40AE7C6D6ADDA8B98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-LiveUpload.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D4B3A4DBBBDB3C8391D84DC86A63D66</key>
 		<dict>
@@ -2711,21 +2927,6 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>2FA277B73E900B8839BFFAF8CB4E63C6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_LiveUploadExtension.framework</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>2FCE5A3D9E57CE1810AFE38C91927C43</key>
 		<dict>
@@ -3200,21 +3401,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37EEEB1FA591E4452CEE1AA517DDAD46</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libksygpulive.framework</string>
-			<key>path</key>
-			<string>libksygpulive.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>37FA368E35E6099D926302DF1669C014</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3569,6 +3755,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3EEE7B54650F6FBC111362754393D5CB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-LiveUpload-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3EF19F2F481B7A3F8398B734FFAE2DAB</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3748,6 +3947,19 @@
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
 		</dict>
+		<key>417D6A79D282DFDCEF543C047369707C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>42566F3A4A0562F10064FB1647CC08AC</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3793,19 +4005,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>435646345185AE76A7ABD79BA4BBA93D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>791238988A748B8BB92B551E8EDD4D12</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>435858554E2C74E155D35C7BD23F34A5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3844,19 +4043,6 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
-		</dict>
-		<key>43F593FAE1C616AF1136B208B6570FA7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>44033D9483C8BEAB26753A3C5EB101F3</key>
 		<dict>
@@ -4070,6 +4256,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>4A439D635FCD3A02355A43D8FD100236</key>
+		<dict>
+			<key>fileRef</key>
+			<string>508CB5C6EAAD48F61662CD51DC643CA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>4A9A5FE6C0DA6F135552C73976FBD452</key>
 		<dict>
 			<key>fileRef</key>
@@ -4141,6 +4341,19 @@
 			<string>libksygpulive.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4BFC903BC037D933E739021DF0B4ED23</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4A439D635FCD3A02355A43D8FD100236</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>4C9DAA1B72F449BE679BE060ABB53079</key>
 		<dict>
@@ -4366,10 +4579,23 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>508CB5C6EAAD48F61662CD51DC643CA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-LiveUpload-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>50D3C6D2AB034E9C8D16A0D0D4B506DA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>751A5890F8A94F384B6ACEA06B205B85</string>
+			<string>57090998A08E9CAF4B02B569DA1DB718</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>APPLICATION_EXTENSION_API_ONLY</key>
@@ -4840,6 +5066,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>55FD395164918DDC4851DE00056DB940</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libksygpulive.framework</string>
+			<key>path</key>
+			<string>libksygpulive.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>5675C1049C3C71B24879E8794C16C215</key>
 		<dict>
 			<key>fileRef</key>
@@ -4851,6 +5092,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>57090998A08E9CAF4B02B569DA1DB718</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>576A865B1432B3C705721CE1CB41B6EE</key>
 		<dict>
@@ -5160,17 +5414,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>5D2B618776BD40A48EB00D092AC6988D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5DDB82E3A98768B8FED86DA203722687</key>
 		<dict>
 			<key>fileRef</key>
@@ -5251,6 +5494,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>605C7925ACE677983AAD62418432214C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-LiveUpload-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>608544CEDB6AD6B6FDA1EE0D8EC88DDA</key>
 		<dict>
@@ -5998,6 +6254,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>6CFBDAA7B2250E1B65F436ADD71D0B39</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>EA0DD8ED489933744D70DD4A9719ED01</string>
+			<key>remoteInfo</key>
+			<string>GPUImage</string>
+		</dict>
 		<key>6D21FDF44F85B46211C6C400EC0CEA6B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6122,6 +6391,13 @@
 				</array>
 			</dict>
 		</dict>
+		<key>6E8D4DE6BB8EE2123F2957E90536A566</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DCA730C04E83FBE4939E14FA2D63E1A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>6F06DDE46EB042E7834F61E98D392A8A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6195,6 +6471,13 @@
 			<string>framework/Source/GPUImageSourceOverBlendFilter.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>718A1C92C7508244F9814EB60A38D1D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>03529FC756E67F539F4D603224E2F1CC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>71F6EF7F4D917C5619FC23ED8F844443</key>
 		<dict>
@@ -6397,19 +6680,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>751A5890F8A94F384B6ACEA06B205B85</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>75728BB5FEEFAB7C8ECB060D68F0A284</key>
 		<dict>
 			<key>fileRef</key>
@@ -6594,30 +6864,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>791238988A748B8BB92B551E8EDD4D12</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>43F593FAE1C616AF1136B208B6570FA7</string>
-				<string>5D2B618776BD40A48EB00D092AC6988D</string>
-				<string>FB6D46044D47DD1236276F5E62D018CB</string>
-				<string>8C10735E69FCBCB81D5273BEFB702680</string>
-				<string>8A6296D6DE898BCBCEBB12D7CB37D62F</string>
-				<string>1CEBB9A2E931F072C44E45FA96B01CE3</string>
-				<string>FDF4D2A9371FCC020383394555E45297</string>
-				<string>FCCA05361F61BB32EF2DFC7D26E886EB</string>
-				<string>751A5890F8A94F384B6ACEA06B205B85</string>
-				<string>DC50AAA048620ABF8FC439BC15938A63</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-LiveUploadExtension</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-LiveUploadExtension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>79AFC3051CA23E1FB56ED889BD36F3D0</key>
 		<dict>
 			<key>fileRef</key>
@@ -6713,6 +6959,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>7C266DC07B61D86F3D63D080C9BCA8A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-LiveUpload.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7CB7E69B6902E87F55DEA56E5A7BB50A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6789,8 +7048,8 @@
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>17F90C9591F85E29E21922C2C634EAEE</string>
 				<string>EC42FC9541D01A85CB04F8523B112657</string>
-				<string>1A2C7FA710AC33617786BB72B10C986A</string>
-				<string>435646345185AE76A7ABD79BA4BBA93D</string>
+				<string>247E9BFF27DC1B373F456E601450503A</string>
+				<string>A7F03F2498C0C12D30C2A37E2E0EA170</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -6857,6 +7116,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>7FE7BFD95706A63D8B77A379FD5C24EE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>GPUImage</string>
+			<key>target</key>
+			<string>EA0DD8ED489933744D70DD4A9719ED01</string>
+			<key>targetProxy</key>
+			<string>6CFBDAA7B2250E1B65F436ADD71D0B39</string>
+		</dict>
 		<key>8021F25FC7739EA688128DC33CD43CB7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6871,6 +7141,19 @@
 			<string>framework/Source/GPUImagePixellateFilter.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>809FFED7A15ACAA8F58C27182CD7663B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>718A1C92C7508244F9814EB60A38D1D6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>80E722F32586FB383A99F23D2DAE1F1E</key>
 		<dict>
@@ -7228,19 +7511,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>8A6296D6DE898BCBCEBB12D7CB37D62F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8A8E77B8F6D1A95466B3CC62BAD6EFEE</key>
 		<dict>
 			<key>children</key>
@@ -7251,6 +7521,19 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B0F57DDAD1FB310FD92076C6C81E751</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -7326,19 +7609,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8C10735E69FCBCB81D5273BEFB702680</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8C3BEC250E232C4091D2175C24C5E49B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -7357,7 +7627,7 @@
 		<key>8C9EB42DAE1FADA2A8B7C2A11DD62BF4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8A6296D6DE898BCBCEBB12D7CB37D62F</string>
+			<string>23E7CE15BA349EE0AF3941C4808780B2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -8076,7 +8346,7 @@
 			<key>productName</key>
 			<string>Pods-LiveUploadExtension</string>
 			<key>productReference</key>
-			<string>2FA277B73E900B8839BFFAF8CB4E63C6</string>
+			<string>2A978322EA3ADCDFA13B496DDD30CB17</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -8098,7 +8368,7 @@
 		<key>9B3FFCD9BCDB539FAB70C0178FDB82F3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>DC50AAA048620ABF8FC439BC15938A63</string>
+			<string>CBAD46F678E79DCB8A730D0B7308D61C</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>APPLICATION_EXTENSION_API_ONLY</key>
@@ -8397,6 +8667,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>A06977643667DA572AA33EBD7CC8A8AF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_LiveUpload.framework</string>
+			<key>path</key>
+			<string>Pods-LiveUpload.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>A0C43EFB1A03F604425D828F454289BD</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -8483,6 +8768,21 @@
 			<string>framework/Source/iOS/GPUImageMovieWriter.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A18A44F76E579E203F579A0BDC5BFE20</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>GPUImage.framework</string>
+			<key>path</key>
+			<string>GPUImage.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>A221FCF5A92D810EB65B4FBD7E2D77DD</key>
 		<dict>
@@ -8697,7 +8997,7 @@
 			<key>productName</key>
 			<string>libksygpulive</string>
 			<key>productReference</key>
-			<string>37EEEB1FA591E4452CEE1AA517DDAD46</string>
+			<string>55FD395164918DDC4851DE00056DB940</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -8855,6 +9155,20 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>A7F03F2498C0C12D30C2A37E2E0EA170</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1AF626926D6C92CD2FF73E20BD874AD3</string>
+				<string>C0E6AF20CCBCA2CC12FC1401A24906C8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A8507A911979FD9A8ECADC07E5142B9B</key>
 		<dict>
@@ -9536,6 +9850,19 @@
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
 		</dict>
+		<key>B8DDA62A2B77755BD987CC4352D8F1FA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6E8D4DE6BB8EE2123F2957E90536A566</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>B8E5151127E765C59FF9034DA17372F5</key>
 		<dict>
 			<key>fileRef</key>
@@ -9837,6 +10164,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>BE82BA0FE7C76C849819574054C2D679</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-LiveUpload-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C09AC4853E7BBC400A3E3D722465498C</key>
 		<dict>
 			<key>fileRef</key>
@@ -9848,6 +10188,30 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>C0E6AF20CCBCA2CC12FC1401A24906C8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C8744C6C1E40B162EBCE8165DF24CBF7</string>
+				<string>2BD73F5711F3962CC02EDCB94C2B81CF</string>
+				<string>0203D1291BBED84EA552C22B41E2B406</string>
+				<string>417D6A79D282DFDCEF543C047369707C</string>
+				<string>23E7CE15BA349EE0AF3941C4808780B2</string>
+				<string>8B0F57DDAD1FB310FD92076C6C81E751</string>
+				<string>DEB26B3D7A09F1EF68CFD2AB040D7079</string>
+				<string>ECB311CF4C224B647DF7F6F0AB21B48E</string>
+				<string>57090998A08E9CAF4B02B569DA1DB718</string>
+				<string>CBAD46F678E79DCB8A730D0B7308D61C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-LiveUploadExtension</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-LiveUploadExtension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C151565D88B2A07C5CCC41A9FC484426</key>
 		<dict>
@@ -10076,6 +10440,19 @@
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
 		</dict>
+		<key>C8744C6C1E40B162EBCE8165DF24CBF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C8A2A75BA06CF5A7C6C7D1194A46E990</key>
 		<dict>
 			<key>fileRef</key>
@@ -10296,6 +10673,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>CBAD46F678E79DCB8A730D0B7308D61C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CC5F040D77E855F1E2BCB3CD08378202</key>
 		<dict>
 			<key>fileRef</key>
@@ -10451,6 +10841,33 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>CE0DB9E84B552AF61691C5BE8205D5D5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>03FD6C36CAC7DBCAE662DCD4227DFBF3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B8DDA62A2B77755BD987CC4352D8F1FA</string>
+				<string>809FFED7A15ACAA8F58C27182CD7663B</string>
+				<string>4BFC903BC037D933E739021DF0B4ED23</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>7FE7BFD95706A63D8B77A379FD5C24EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-LiveUpload</string>
+			<key>productName</key>
+			<string>Pods-LiveUpload</string>
+			<key>productReference</key>
+			<string>A06977643667DA572AA33EBD7CC8A8AF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>CFBAE959DB512E4BDA474DC8289C8A5B</key>
 		<dict>
@@ -10834,7 +11251,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>1A2C7FA710AC33617786BB72B10C986A</string>
+			<string>247E9BFF27DC1B373F456E601450503A</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -10845,6 +11262,7 @@
 			<array>
 				<string>EA0DD8ED489933744D70DD4A9719ED01</string>
 				<string>A4F314F47704F7CBE45EDD784FA3D021</string>
+				<string>CE0DB9E84B552AF61691C5BE8205D5D5</string>
 				<string>9AA183A8BC9A439C434B2B28F7A98593</string>
 			</array>
 		</dict>
@@ -10889,6 +11307,17 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>D502477402FA365B80FBA8434B496517</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-LiveUpload.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D5F0893785DE69DCB7A9F64E64989AE6</key>
 		<dict>
@@ -11031,6 +11460,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>D96E41FC8AD2C2347F5F6ED64942C285</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-LiveUpload-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>DA141B593AF3A22CBA0B1954C6651C18</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -11170,16 +11612,16 @@
 				</array>
 			</dict>
 		</dict>
-		<key>DC50AAA048620ABF8FC439BC15938A63</key>
+		<key>DCA730C04E83FBE4939E14FA2D63E1A0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-LiveUploadExtension.release.xcconfig</string>
+			<string>Pods-LiveUpload-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -11265,6 +11707,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>DEB26B3D7A09F1EF68CFD2AB040D7079</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DF25BF6A683B9DF6240C9C13DC60278B</key>
 		<dict>
@@ -11771,7 +12226,7 @@
 			<key>productName</key>
 			<string>GPUImage</string>
 			<key>productReference</key>
-			<string>22D40B50567F88B1D3AB44A47839E83C</string>
+			<string>A18A44F76E579E203F579A0BDC5BFE20</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -11942,6 +12397,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>EC74D202F2987535587216FE6267D3E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>ECB103DC1840705230CCC535B29ABB3E</key>
 		<dict>
 			<key>fileRef</key>
@@ -11953,6 +12421,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks</string>
 			</dict>
+		</dict>
+		<key>ECB311CF4C224B647DF7F6F0AB21B48E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-LiveUploadExtension-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>ECD28BCDA98A90076CA02CFA58AA5222</key>
 		<dict>
@@ -12768,19 +13249,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FB6D46044D47DD1236276F5E62D018CB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>FBC711F65ED3C58AB3F2DD8F01A15492</key>
 		<dict>
 			<key>fileRef</key>
@@ -12821,19 +13289,6 @@
 			<string>GPUImageOutput.m</string>
 			<key>path</key>
 			<string>framework/Source/GPUImageOutput.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCCA05361F61BB32EF2DFC7D26E886EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -12888,19 +13343,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>yuv</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FDF4D2A9371FCC020383394555E45297</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LiveUploadExtension-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
