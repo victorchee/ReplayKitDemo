@@ -14,7 +14,6 @@
 		1F5B1F621DD9B1D2004EB4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F611DD9B1D2004EB4FF /* Assets.xcassets */; };
 		1F5B1F651DD9B1D2004EB4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B1F631DD9B1D2004EB4FF /* LaunchScreen.storyboard */; };
 		1F5B1F731DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
-		1F5B1F771DD9B1E7004EB4FF /* MovieClipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */; };
 		1F5B1F811DD9B1E7004EB4FF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */; };
 		1F5B1F831DD9B1E7004EB4FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */; };
 		1F5B1F871DD9B1E7004EB4FF /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B1F861DD9B1E7004EB4FF /* BroadcastViewController.m */; };
@@ -23,8 +22,6 @@
 		1F5B1F911DD9B1E7004EB4FF /* LiveUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F5B25D91DDB053D004EB4FF /* KSYRKStreamerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */; };
 		1F5B25DA1DDB053D004EB4FF /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B25D81DDB053D004EB4FF /* SampleHandler.m */; };
-		1F5B25DB1DDB0A7C004EB4FF /* KSYRKStreamerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */; };
-		377CB9B0F41720A4A527D364 /* Pods_LiveUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2BB578042BE6C35D1AB89 /* Pods_LiveUpload.framework */; };
 		9C3FF5C283E8D85D19BC4E28 /* Pods_LiveUploadExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F881039CC13CDA0BEFB4F115 /* Pods_LiveUploadExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +70,6 @@
 		1F5B1F661DD9B1D2004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5B1F701DD9B1E7004EB4FF /* LiveUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5B1F721DD9B1E7004EB4FF /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
-		1F5B1F751DD9B1E7004EB4FF /* MovieClipHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieClipHandler.h; sourceTree = "<group>"; };
-		1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieClipHandler.m; sourceTree = "<group>"; };
 		1F5B1F7B1DD9B1E7004EB4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5B1F801DD9B1E7004EB4FF /* LiveUploadExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveUploadExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5B1F821DD9B1E7004EB4FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -87,8 +82,6 @@
 		1F5B25D71DDB053D004EB4FF /* SampleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
 		1F5B25D81DDB053D004EB4FF /* SampleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
 		67C86D7C0220024979B53DA1 /* Pods-LiveUploadExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUploadExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.release.xcconfig"; sourceTree = "<group>"; };
-		742B3A3112E21DF0DB896C53 /* Pods-LiveUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload.debug.xcconfig"; sourceTree = "<group>"; };
-		9132C0B9BC1437100AC97F60 /* Pods-LiveUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUpload/Pods-LiveUpload.release.xcconfig"; sourceTree = "<group>"; };
 		93087C7DA106E2CE83D8A814 /* Pods-LiveUploadExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveUploadExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveUploadExtension/Pods-LiveUploadExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF2BB578042BE6C35D1AB89 /* Pods_LiveUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F881039CC13CDA0BEFB4F115 /* Pods_LiveUploadExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveUploadExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377CB9B0F41720A4A527D364 /* Pods_LiveUpload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +121,6 @@
 			children = (
 				93087C7DA106E2CE83D8A814 /* Pods-LiveUploadExtension.debug.xcconfig */,
 				67C86D7C0220024979B53DA1 /* Pods-LiveUploadExtension.release.xcconfig */,
-				742B3A3112E21DF0DB896C53 /* Pods-LiveUpload.debug.xcconfig */,
-				9132C0B9BC1437100AC97F60 /* Pods-LiveUpload.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -195,8 +185,6 @@
 		1F5B1F741DD9B1E7004EB4FF /* LiveUploadExtension */ = {
 			isa = PBXGroup;
 			children = (
-				1F5B1F751DD9B1E7004EB4FF /* MovieClipHandler.h */,
-				1F5B1F761DD9B1E7004EB4FF /* MovieClipHandler.m */,
 				1F5B25D51DDB053D004EB4FF /* KSYRKStreamerKit.h */,
 				1F5B25D61DDB053D004EB4FF /* KSYRKStreamerKit.m */,
 				1F5B25D71DDB053D004EB4FF /* SampleHandler.h */,
@@ -452,7 +440,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5B25DB1DDB0A7C004EB4FF /* KSYRKStreamerKit.m in Sources */,
 				1F5B1F5D1DD9B1D2004EB4FF /* ViewController.m in Sources */,
 				1F5B1F5A1DD9B1D2004EB4FF /* AppDelegate.m in Sources */,
 				1F5B1F571DD9B1D2004EB4FF /* main.m in Sources */,
@@ -465,7 +452,6 @@
 			files = (
 				1F5B25DA1DDB053D004EB4FF /* SampleHandler.m in Sources */,
 				1F5B25D91DDB053D004EB4FF /* KSYRKStreamerKit.m in Sources */,
-				1F5B1F771DD9B1E7004EB4FF /* MovieClipHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,7 +598,6 @@
 		};
 		1F5B1F6A1DD9B1D2004EB4FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 742B3A3112E21DF0DB896C53 /* Pods-LiveUpload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TN392GAYUP;
@@ -625,7 +610,6 @@
 		};
 		1F5B1F6B1DD9B1D2004EB4FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9132C0B9BC1437100AC97F60 /* Pods-LiveUpload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TN392GAYUP;

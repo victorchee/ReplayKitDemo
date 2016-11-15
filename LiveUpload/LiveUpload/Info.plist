@@ -45,10 +45,5 @@
 	<string>CameraUsageDescription</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Microphone Usage Description</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>
