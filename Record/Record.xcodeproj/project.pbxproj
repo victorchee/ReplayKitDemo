@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					1FDC21741DBF558E00340CC1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 8F4GU35MC5;
+						DevelopmentTeam = TN392GAYUP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				DEVELOPMENT_TEAM = TN392GAYUP;
 				INFOPLIST_FILE = Record/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.Record;
@@ -274,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8F4GU35MC5;
+				DEVELOPMENT_TEAM = TN392GAYUP;
 				INFOPLIST_FILE = Record/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.Record;
