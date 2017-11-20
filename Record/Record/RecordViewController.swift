@@ -18,7 +18,7 @@ class RecordViewController: UIViewController {
     
     @IBOutlet weak var recordBarButton: UIBarButtonItem!
     @IBOutlet weak var stopBarButton: UIBarButtonItem!
-    @IBOutlet weak var cancelBarButton: UIBarButtonItem!
+    @IBOutlet weak var discardBarButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +93,8 @@ class RecordViewController: UIViewController {
         }
     }
     
-    @IBAction func cancelRecording(_ sender: UIBarButtonItem) {
+    /// When you are all done with the recording. You can also just start a new recording and the old one will be discarded automatically.
+    @IBAction func discardRecording(_ sender: UIBarButtonItem) {
         let recorder = RPScreenRecorder.shared()
         
         recorder.discardRecording { [unowned self] in
@@ -109,7 +110,7 @@ extension RecordViewController: RPScreenRecorderDelegate {
         print("screen recorder did change availability")
     }
     
-    func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWithError error: Error, previewViewController: RPPreviewViewController?) {
+    func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith previewViewController: RPPreviewViewController?, error: Error?) {
         print("screen recorder did stop recording : \(error.localizedDescription)")
     }
 }
@@ -122,7 +123,7 @@ extension RecordViewController: RPPreviewViewControllerDelegate {
     
     func previewController(_ previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {
         print("preview controller did finish with activity types : \(activityTypes)")
-        if activityTypes.contains("com.apple.UIKit.activity.SaveToCameraRoll") {
+        if activityTypes.contains(UIActivityType.saveToCameraRoll) {
             // video has saved to camera roll
         } else {
             // cancel
