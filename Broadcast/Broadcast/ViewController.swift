@@ -49,14 +49,14 @@ class ViewController: UIViewController {
         emitterCell.color = color.cgColor
         emitterCell.velocity = 50
         emitterCell.velocityRange = 50
-        emitterCell.emissionRange = CGFloat(M_PI * 2.0)
+        emitterCell.emissionRange = CGFloat(Double.pi * 2.0)
         return emitterCell
     }
 
     @IBAction func broadcast(_ sender: UIBarButtonItem) {
         if RPScreenRecorder.shared().isRecording {
             broadcastController?.finishBroadcast { [unowned self] error in
-                print("finish broadcast with error: \(error)")
+                print("finish broadcast with error: \(String(describing: error))")
                 
                 self.pauseBarButton.isEnabled = false
                 self.resumeBarButton.isEnabled = false
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             
         }
         broadcastController?.finishBroadcast { [unowned self] error in
-            print("finish broadcast with error: \(error)")
+            print("finish broadcast with error: \(String(describing: error))")
             
             self.pauseBarButton.isEnabled = false
             self.resumeBarButton.isEnabled = false
@@ -118,7 +118,7 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
         broadcastActivityViewController.dismiss(animated: true) {
             self.broadcastController?.startBroadcast { [unowned self] error in
                 // broadcast started
-                print("broadcast started with error: \(error)")
+                print("broadcast started with error: \(String(describing: error))")
                 
                 if let cameraPreviewView = RPScreenRecorder.shared().cameraPreviewView {
                     cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 200, height: 200)
@@ -135,7 +135,7 @@ extension ViewController: RPBroadcastActivityViewControllerDelegate {
 
 extension ViewController: RPBroadcastControllerDelegate {
     func broadcastController(_ broadcastController: RPBroadcastController, didFinishWithError error: Error?) {
-        print("broadcast did finish with error: \(error)")
+        print("broadcast did finish with error: \(String(describing: error))")
     }
     
     func broadcastController(_ broadcastController: RPBroadcastController, didUpdateServiceInfo serviceInfo: [String : NSCoding & NSObjectProtocol]) {
