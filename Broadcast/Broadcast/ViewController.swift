@@ -63,17 +63,35 @@ class ViewController: UIViewController {
                 sender.isEnabled = false
             }
         } else {
-            RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
-                if let broadcastActivityViewController = broadcastActivityViewController {
-                    broadcastActivityViewController.delegate = self
-                    
-                    broadcastActivityViewController.modalPresentationStyle = .popover
-                    
-                    if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
-                        broadcastActivityViewController.popoverPresentationController?.barButtonItem = sender
+            if #available(iOS 11.0, *) {
+                // This extension should be the broadcast upload extension UI, not boradcast update extension
+                RPBroadcastActivityViewController.load(withPreferredExtension: "com.victorchee.BroadcasterHandler.BroadcastUploadExtensionUI") { (broadcastActivityViewController, error) in
+                    if let broadcastActivityViewController = broadcastActivityViewController {
+                        broadcastActivityViewController.delegate = self
+                        
+                        broadcastActivityViewController.modalPresentationStyle = .popover
+                        
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                            broadcastActivityViewController.popoverPresentationController?.barButtonItem = sender
+                        }
+                        
+                        self.present(broadcastActivityViewController, animated: true)
                     }
-                    
-                    self.present(broadcastActivityViewController, animated: true)
+                }
+            } else {
+                // Fallback on earlier versions
+                RPBroadcastActivityViewController.load { broadcastActivityViewController, error in
+                    if let broadcastActivityViewController = broadcastActivityViewController {
+                        broadcastActivityViewController.delegate = self
+                        
+                        broadcastActivityViewController.modalPresentationStyle = .popover
+                        
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                            broadcastActivityViewController.popoverPresentationController?.barButtonItem = sender
+                        }
+                        
+                        self.present(broadcastActivityViewController, animated: true)
+                    }
                 }
             }
         }
@@ -140,5 +158,9 @@ extension ViewController: RPBroadcastControllerDelegate {
     
     func broadcastController(_ broadcastController: RPBroadcastController, didUpdateServiceInfo serviceInfo: [String : NSCoding & NSObjectProtocol]) {
         print("broadcast did update service info: \(serviceInfo)")
+    }
+    
+    func broadcastController(_ broadcastController: RPBroadcastController, didUpdateBroadcast broadcastURL: URL) {
+        print("broadcast did update URL: \(broadcastURL)")
     }
 }
