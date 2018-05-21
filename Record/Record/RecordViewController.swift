@@ -56,7 +56,7 @@ class RecordViewController: UIViewController {
             } else {
                 sender.isEnabled = false
                 self.stopBarButton.isEnabled = true
-                self.cancelBarButton.isEnabled = true
+                self.discardBarButton.isEnabled = true
                 
                 if let cameraPreviewView = recorder.cameraPreviewView {
                     cameraPreviewView.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: 100, height: 100)
@@ -75,7 +75,7 @@ class RecordViewController: UIViewController {
             } else {
                 sender.isEnabled = false
                 self.recordBarButton.isEnabled = true
-                self.cancelBarButton.isEnabled = false
+                self.discardBarButton.isEnabled = false
                 
                 if let preview = previewController {
                     preview.previewControllerDelegate = self
@@ -111,7 +111,7 @@ extension RecordViewController: RPScreenRecorderDelegate {
     }
     
     func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith previewViewController: RPPreviewViewController?, error: Error?) {
-        print("screen recorder did stop recording : \(error.localizedDescription)")
+        print("screen recorder did stop recording : \(String(describing: error?.localizedDescription))")
     }
 }
 
@@ -123,7 +123,7 @@ extension RecordViewController: RPPreviewViewControllerDelegate {
     
     func previewController(_ previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {
         print("preview controller did finish with activity types : \(activityTypes)")
-        if activityTypes.contains(UIActivityType.saveToCameraRoll) {
+        if activityTypes.contains(UIActivityType.saveToCameraRoll.rawValue) {
             // video has saved to camera roll
         } else {
             // cancel

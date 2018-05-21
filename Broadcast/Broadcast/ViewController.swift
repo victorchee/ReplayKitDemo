@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         } else {
             if #available(iOS 11.0, *) {
                 // This extension should be the broadcast upload extension UI, not boradcast update extension
-                RPBroadcastActivityViewController.load(withPreferredExtension: "com.victorchee.BroadcasterHandler.BroadcastUploadExtensionUI") { (broadcastActivityViewController, error) in
+                RPBroadcastActivityViewController.load(withPreferredExtension: "com.victorchee.BroadcasterHandler1.BroadcastUploadExtensionUI") { (broadcastActivityViewController, error) in
                     if let broadcastActivityViewController = broadcastActivityViewController {
                         broadcastActivityViewController.delegate = self
                         
