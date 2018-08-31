@@ -239,7 +239,7 @@
 				TargetAttributes = {
 					1FDC21B01DBF560300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 85MY7UX3TF;
+						DevelopmentTeam = YA5C67G66D;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -250,7 +250,7 @@
 					};
 					1FDC22071DBF5D3300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 85MY7UX3TF;
+						DevelopmentTeam = YA5C67G66D;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -261,7 +261,7 @@
 					};
 					1FDC22151DBF5D3300340CC1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 85MY7UX3TF;
+						DevelopmentTeam = YA5C67G66D;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
@@ -502,10 +502,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BroadcastHandler/BroadcastHandler.entitlements;
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -518,10 +518,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BroadcastHandler/BroadcastHandler.entitlements;
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastHandler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -532,10 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1.BroadcastUploadExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler.BroadcastUploadExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -547,10 +547,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1.BroadcastUploadExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler.BroadcastUploadExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -561,10 +561,10 @@
 		1FDC22291DBF5D3400340CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastUploadExtensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1.BroadcastUploadExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler.BroadcastUploadExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -575,10 +575,10 @@
 		1FDC222A1DBF5D3400340CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 85MY7UX3TF;
+				DEVELOPMENT_TEAM = YA5C67G66D;
 				INFOPLIST_FILE = BroadcastUploadExtensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler1.BroadcastUploadExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.BroadcasterHandler.BroadcastUploadExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;

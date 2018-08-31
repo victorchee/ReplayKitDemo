@@ -13,7 +13,7 @@ class MovieClipHandler: RPBroadcastMP4ClipHandler {
     
     override func processMP4Clip(with mp4ClipURL: URL?, setupInfo: [String : NSObject]?, finished: Bool) {
         // save mp4 clip to group
-        let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.victorchee.broadcaster1")
+        let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.victorchee.broadcaster")
         let destinationURL = groupURL?.appendingPathComponent(mp4ClipURL!.lastPathComponent)
         try? FileManager.default.copyItem(at: mp4ClipURL!, to: destinationURL!)
         

@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         } else {
             if #available(iOS 11.0, *) {
                 // This extension should be the broadcast upload extension UI, not boradcast update extension
-                RPBroadcastActivityViewController.load(withPreferredExtension: "com.victorchee.BroadcasterHandler1.BroadcastUploadExtensionUI") { (broadcastActivityViewController, error) in
+                RPBroadcastActivityViewController.load(withPreferredExtension: "com.victorchee.BroadcasterHandler.BroadcastUploadExtensionUI") { (broadcastActivityViewController, error) in
                     if let broadcastActivityViewController = broadcastActivityViewController {
                         broadcastActivityViewController.delegate = self
                         
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
     
     @IBAction func finishBroadcast(_ sender: UIBarButtonItem) {
         RPScreenRecorder.shared().stopRecording { (previewViewController, error) in
-            
+            print("finish recording with error: \(String(describing: error))")
         }
         broadcastController?.finishBroadcast { [unowned self] error in
             print("finish broadcast with error: \(String(describing: error))")

@@ -37,7 +37,7 @@ class BroadcastHandlerViewController: UITableViewController {
     
     @objc func refresh(_ sender: UIRefreshControl) {
         mp4Clips.removeAll()
-        let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.victorchee.broadcaster1")
+        let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.victorchee.broadcaster")
         let resourceKeys = [URLResourceKey.isDirectoryKey]
         let enumerator = FileManager.default.enumerator(at: groupURL!, includingPropertiesForKeys: resourceKeys, options: [.skipsHiddenFiles], errorHandler: nil)
         for case let fileURL as NSURL in enumerator! {
