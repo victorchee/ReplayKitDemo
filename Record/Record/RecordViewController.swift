@@ -123,7 +123,7 @@ extension RecordViewController: RPPreviewViewControllerDelegate {
     
     func previewController(_ previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {
         print("preview controller did finish with activity types : \(activityTypes)")
-        if activityTypes.contains(UIActivityType.saveToCameraRoll.rawValue) {
+        if activityTypes.contains(UIActivity.ActivityType.saveToCameraRoll.rawValue) {
             // video has saved to camera roll
         } else {
             // cancel
