@@ -2,7 +2,7 @@
 //  MovieClipHandler.swift
 //  BroadcastUploadExtension
 //
-//  Created by Migu on 2016/10/25.
+//  Created by VictorChee on 2016/10/25.
 //  Copyright © 2016年 VictorChee. All rights reserved.
 //
 
